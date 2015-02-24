@@ -1,5 +1,6 @@
 @import "bootstrap-variables";
 @import "../vendor/css/_bootstrap";
+@import "./pricing";
 
 // Converted Variables
 
@@ -44,6 +45,12 @@ body {
   &:hover {
     color: #fff;
   }
+}
+
+.clarity {
+  padding: 1em;
+  text-align: center !important;
+  font-size: 1.2em;
 }
 
 /* Titles */
@@ -150,15 +157,23 @@ Wrap Sections
 
 /* Showcase Wrap */
 
-#showcase {
+#platform {
   display: block;
-  background-color: #34495e;
+  background-color: #F2F2F2;
   padding-top: 50px;
   padding-bottom: 50px;
 }
 
-#showcase h1 {
-  color: white;
+#pricing {
+  padding-top: 1em;
+
+  h1 {
+    padding: 1em 0 0em;
+  }
+}
+
+#export {
+  padding-bottom: 3em;
 }
 
 #footerwrap {

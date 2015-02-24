@@ -1,0 +1,210 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset='utf-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    meta(name='description', content='Pratt - Free Bootstrap 3 Theme')
+    meta(name='author', content='Alvarez.is - BlackTie.co')
+    link(rel='shortcut icon', href='ico/favicon.png')
+    title Pratt - Free Bootstrap 3 Theme
+    link(href='css/main.css', rel='stylesheet')
+    link(href='http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,900', rel='stylesheet', type='text/css')
+    link(href='http://fonts.googleapis.com/css?family=Raleway:400,300,700', rel='stylesheet', type='text/css')
+    script(src='js/app.js')
+    script(src='js/smoothscroll.js')
+  body(data-spy='scroll', data-offset='0', data-target='#navigation')
+    // Fixed navbar
+    .navbar.navbar-default
+      .container
+          .navbar-header
+            a.navbar-brand.brand(href='/')
+              img(src='/img/logo.png')
+            button.navbar-toggle.collapsed(aria-controls='navbar', aria-expanded='false', data-target='#navbar', data-toggle='collapse', type='button')
+              span.sr-only Toggle navigation
+              span.icon-bar
+              span.icon-bar
+              span.icon-bar
+          #navbar.navbar-collapse.collapse
+            ul.nav.navbar-nav.navbar-right
+              li
+                a(href='/pricing') Pricing
+              li
+                a(href='http://app.closeheat.com/users/sign_in') Log In
+              li
+                p.navbar-text or
+              li
+                p.navbar-btn
+                  a.btn.btn-primary(href='http://app.closeheat.com/users/sign_up') Sign Up Free
+    section#home(name='home')
+    #headerwrap
+      .container
+        .row.centered
+          .col-lg-12
+            h1 Supercharge Your Workflow
+            h3 The Only Way to Truly Forget All Configuration of Static Web Apps
+            br
+        .row.centered
+          .cta
+            a(href='#') Launch an app free
+          .col-lg-offset-2.col-lg-8
+            img.img-responsive(src='/img/app-bg.png', alt='')
+      // / .container
+    // / #headerwrap
+    section#desc(name='desc')
+    // INTRO WRAP
+    #intro
+      .container
+        .row.centered
+          h1 Develop With Ease
+          br
+          br
+          .col-lg-4
+            img(src='/img/intro01.png', alt='')
+            h3 Automated Dependencies
+            p
+              | Just use require('angular') and we will download it for you.
+              |  Stop updating that package.json by hand.
+          .col-lg-4
+            img(src='/img/intro02.png', alt='')
+            h3 Compiles Everything
+            p
+              | Automatic preprocessing for Jade, SCSS, CoffeeScript and Markdown
+              |  without any setup.
+          .col-lg-4
+            img(src='/img/intro03.png', alt='')
+            h3 Auto-Refresh
+            p Automatic refresh of browsers every time you edit a file.
+        br
+        hr
+      // / .container
+    // / #introwrap
+    // FEATURES WRAP
+    #features
+      .container
+        .row
+          h1.centered What&apos;s New?
+          br
+          br
+          .col-lg-6.centered
+            img.centered(src='/img/mobile.png', alt='')
+          .col-lg-6
+            h3 Some Features
+            br
+            // ACCORDION
+            #accordion2.accordion.ac
+              .accordion-group
+                .accordion-heading
+                  a.accordion-toggle(data-toggle='collapse', data-parent='#accordion2', href='#collapseOne')
+                    | First Class Design
+                // /accordion-heading
+                #collapseOne.accordion-body.collapse.in
+                  .accordion-inner
+                    p
+                      | It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                  // /accordion-inner
+                // /collapse
+              // /accordion-group
+              br
+              .accordion-group
+                .accordion-heading
+                  a.accordion-toggle(data-toggle='collapse', data-parent='#accordion2', href='#collapseTwo')
+                    | Retina Ready Theme
+                #collapseTwo.accordion-body.collapse
+                  .accordion-inner
+                    p
+                      | It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                  // /accordion-inner
+                // /collapse
+              // /accordion-group
+              br
+              .accordion-group
+                .accordion-heading
+                  a.accordion-toggle(data-toggle='collapse', data-parent='#accordion2', href='#collapseThree')
+                    | Awesome Support
+                #collapseThree.accordion-body.collapse
+                  .accordion-inner
+                    p
+                      | It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                  // /accordion-inner
+                // /collapse
+              // /accordion-group
+              br
+              .accordion-group
+                .accordion-heading
+                  a.accordion-toggle(data-toggle='collapse', data-parent='#accordion2', href='#collapseFour')
+                    | Responsive Design
+                #collapseFour.accordion-body.collapse
+                  .accordion-inner
+                    p
+                      | It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                  // /accordion-inner
+                // /collapse
+              // /accordion-group
+              br
+            // Accordion
+      // / .container
+    // / #features
+    section#showcase(name='showcase')
+    #showcase
+      .container
+        .row
+          h1.centered Some Screenshots
+          br
+          .col-lg-8.col-lg-offset-2
+            #carousel-example-generic.carousel.slide
+              // Indicators
+              ol.carousel-indicators
+                li.active(data-target='#carousel-example-generic', data-slide-to='0')
+                li(data-target='#carousel-example-generic', data-slide-to='1')
+              // Wrapper for slides
+              .carousel-inner
+                .item.active
+                  img(src='/img/item-01.png', alt='')
+                .item
+                  img(src='/img/item-02.png', alt='')
+        br
+        br
+        br
+      // /container
+    section#contact(name='contact')
+    #footerwrap
+      .container
+        .col-lg-5
+          h3 Address
+          p
+            | Av. Greenville 987,
+            br
+            | &#x9;&#x9;&#x9;&#x9;New York,
+            br
+            | &#x9;&#x9;&#x9;&#x9;90873
+            br
+            | &#x9;&#x9;&#x9;&#x9;United States
+        .col-lg-7
+          h3 Drop Us A Line
+          br
+          form(role='form', action='#', method='post', enctype='plain')
+            .form-group
+              label(for='name1') Your Name
+              input#name1.form-control(type='name', name='Name', placeholder='Your Name')
+            .form-group
+              label(for='email1') Email address
+              input#email1.form-control(type='email', name='Mail', placeholder='Enter email')
+            .form-group
+              label Your Text
+              textarea.form-control(name='Message', rows='3')
+            br
+            button.btn.btn-large.btn-success(type='submit') SUBMIT
+    #c
+      .container
+        p
+          | Created by
+          a(href='http://www.blacktie.co') BLACKTIE.CO
+    //
+      Bootstrap core JavaScript
+      ==================================================
+    // Placed at the end of the document so the pages load faster
+    script(src='/js/bootstrap.js')
+    script.
+      $('.carousel').carousel({
+      interval: 3500
+      })

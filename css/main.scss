@@ -26,6 +26,10 @@ img.feature {
 .navbar {
   margin: 0;
 
+  .navbar-text {
+    line-height: 20px;
+  }
+
   .brand img {
     height: 30px;
   }
@@ -48,6 +52,7 @@ img.feature {
 
   &:hover {
     color: #fff;
+    background-color: #F33602;
   }
 }
 
@@ -166,6 +171,10 @@ Wrap Sections
   background-color: #F2F2F2;
   padding-top: 50px;
   padding-bottom: 50px;
+}
+
+.deploy-clarity {
+  padding-top: 3em;
 }
 
 #pricing {

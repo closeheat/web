@@ -8,7 +8,7 @@ $brand-info: #6995FF;
 
 // Navbar
 $navbar-default-link-color: #fff;
-$navbar-default-link-hover-color: #282B3A;
+$navbar-default-link-hover-color: darken($navbar-default-link-color, 30%);
 $navbar-default-bg: $first-bg;
 $navbar-default-border: $first-bg;
 $navbar-border-radius: 0px;

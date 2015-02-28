@@ -2,6 +2,8 @@ window.$ = window.jQuery = require 'jquery'
 require 'bootstrap'
 
 $ ->
+  window.smoothScroll.init()
+
   $('#send-message').on 'click', (e) ->
     e.preventDefault()
 

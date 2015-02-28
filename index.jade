@@ -208,25 +208,37 @@ html(lang='en')
         .col-lg-5
           h3 Address
           p
-            | Av. Greenville 987,
+            | Saltiniu g. 1 - 28,
             br
-            | &#x9;&#x9;&#x9;&#x9;New York,
+            | Vilnius,
             br
-            | &#x9;&#x9;&#x9;&#x9;90873
+            | 03218
             br
-            | &#x9;&#x9;&#x9;&#x9;United States
+            | Lithuania
         .col-lg-7
           h3 Drop Us A Line
           br
-          form(role='form', action='#', method='post', enctype='plain')
+          form#drop-a-line(role='form')
             .form-group
-              label(for='name1') Your Name
-              input#name1.form-control(type='name', name='Name', placeholder='Your Name')
+              input#your-email.form-control(type='email', placeholder='Your email address')
             .form-group
-              label(for='email1') Email address
-              input#email1.form-control(type='email', name='Mail', placeholder='Enter email')
-            .form-group
-              label Your Text
-              textarea.form-control(name='Message', rows='3')
+              textarea#your-message.form-control(placeholder='Your message', rows='3')
             br
-            button.btn.btn-large.btn-success(type='submit') SUBMIT
+            button#send-message.btn.btn-large.btn-success SUBMIT
+
+          #thanks-note.hidden
+            p: b Thank you for everything!
+            p
+              | We'll contact you as soon as we find this.
+              br
+              i (usually in a few hours)
+
+          #error-note.hidden
+            p: b There were errors sending your message.
+            p
+              | Feel free to email our CEO directly on
+              |  <a href='mailto:domas.bitvinskas@me.com'>domas.bitvinskas@me.com</a>.
+              br
+              | He'll get back to you a soon as he finds it.
+              br
+              i (usually in a few hours)

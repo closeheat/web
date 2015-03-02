@@ -11,7 +11,7 @@ initAnalytics = ->
   track('.nav a', 'Navbar')
   track('.nav a.btn-primary', 'Navbar CTA')
   track('.carousel-indicators li', 'Carousel')
-  track('#pricing cta', 'Bottom CTA')
+  track('#pricing .cta', 'Bottom CTA')
   track('#drop-a-line', 'Drop a line')
   track('#send-message', 'Send message')
 

@@ -12,13 +12,13 @@
 #pricing {
   .plans {
     margin: 25px auto;
-    // width: 660px;
+    width: 660px;
     @include clearfix;
   }
 
   .plan {
     float: left;
-    // width: 220px;
+    width: 220px;
     margin: 10px 0;
     padding: 20px;
     text-align: center;

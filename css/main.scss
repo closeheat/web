@@ -43,7 +43,9 @@ img.feature {
   font-weight: 900;
   font-size: 28px;
   text-align: center;
-  width: 370px;
+  @media (min-width: $screen-sm-min) {
+    width: 370px;
+  }
   padding: 21px 0 19px;
   margin: 20px auto 30px auto;
   border-bottom: 3px solid hsla(13, 98%, 38%, 1);
@@ -129,7 +131,9 @@ Wrap Sections
 #headerwrap h1 {
   margin-top: 30px;
   color: white;
-  font-size: 70px;
+  @media (min-width: $screen-sm-min) {
+    font-size: 70px;
+  }
 }
 
 #headerwrap h3 {
@@ -158,6 +162,10 @@ Wrap Sections
 #features {
   padding-top: 50px;
   padding-bottom: 50px;
+
+  img {
+    margin: auto;
+  }
 }
 
 #features .ac a{

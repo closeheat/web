@@ -43,9 +43,6 @@ img.feature {
   font-weight: 900;
   font-size: 28px;
   text-align: center;
-  @media (min-width: $screen-sm-min) {
-    width: 370px;
-  }
   padding: 21px 0 19px;
   margin: 20px auto 30px auto;
   border-bottom: 3px solid hsla(13, 98%, 38%, 1);
@@ -199,6 +196,7 @@ Wrap Sections
 }
 
 #export {
+  padding-top: 2em;
   padding-bottom: 3em;
 }
 
@@ -230,4 +228,8 @@ Wrap Sections
 
 #c p {
   color: white
+}
+
+.art h3 {
+  height: 2em;
 }

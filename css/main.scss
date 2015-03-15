@@ -178,9 +178,13 @@ Wrap Sections
 
 #platform {
   display: block;
-  background-color: #F2F2F2;
+  background-color: #34495e;
   padding-top: 50px;
   padding-bottom: 50px;
+  color: #fff;
+  h1, h3 {
+    color: #fff;
+  }
 }
 
 .deploy-clarity {

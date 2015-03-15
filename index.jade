@@ -4,7 +4,6 @@ html(lang='en')
     meta(charset='utf-8')
     meta(name='viewport', content='width=device-width, initial-scale=1.0')
     meta(name='description', content='closeheat - Automated toolkit for monkey tasks and a powerful hosting platform')
-    link(rel='shortcut icon', href='ico/favicon.png')
     meta(property='og:image' content='http://closeheat.com/img/ogimage.png')
     meta(property='og:title' content='Supercharge Your Web App Workflow')
     meta(property='og:description' content='Automated toolkit for monkey tasks and a powerful hosting platform')
@@ -34,8 +33,6 @@ html(lang='en')
           #navbar.navbar-collapse.collapse
             ul.nav.navbar-nav.navbar-right
               li
-                a(data-scroll href='#pricing') Pricing
-              li
                 a(href='http://app.closeheat.com/users/sign_in') Log In
               li
                 p.navbar-text or
@@ -47,54 +44,25 @@ html(lang='en')
       .container
         .row.centered
           .col-lg-12
-            h1 Supercharge Your Web App Workflow
-            h3 Automated toolkit for monkey tasks and a powerful hosting platform
+            h1 Ship Websites Faster
+            h3 Don't just talk about it
         .row.centered
           .cta
-            a(href='http://app.closeheat.com/users/sign_up') Build an app free
+            a(href='http://app.closeheat.com/users/sign_up') Build a website now
           .col-lg-offset-2.col-lg-8
             img.img-responsive(src='/img/app-bg.png', alt='')
             p.clarity
-              | A toolkit
-              |  which <b>automates your SCSS, Jade and CoffeeScript</b>
-              |  compilations, <b>downloads dependencies</b> and
-              |  and provides <b>continuous one-liner deployments</b> to a powerful
-              |  platform for Static Web Apps.
-    section#desc(name='desc')
+              | <b>closeheat</b> is a <b>hosting platform</b> and an
+              |  <b>intergrated toolkit</b>
+              |  for developing websites with languages like <b>Jade</b>,
+              |  <b>SCSS</b> and
+              |  <b>CoffeeScript</b>.
 
-    // INTRO WRAP
-    #intro
-      .container
-        .row.centered
-          h1 Develop With Ease
-          br
-          br
-          .col-lg-4
-            img.feature(src='/img/1.svg', alt='')
-            h3 Automated Dependencies
-            p
-              | Just write <code>require('angular')</code> in your code and
-              |  <b>we will download it for you</b>.
-              |  Updating that package.json is not cool anymore.
-          .col-lg-4
-            img.feature(src='/img/2.svg', alt='')
-            h3 Compiles Everything
-            p
-              | Automatic preprocessing for <b>Jade, SCSS, CoffeeScript and Markdown</b>
-              |  without any setup.
-          .col-lg-4
-            img.feature(src='/img/3.svg', alt='')
-            h3 Server with Auto-Refresh
-            p
-              | We <b>automatically refresh</b> your browser <b>every time you
-              |  make an edit</b>. It's such a time saver!
-        br
-        hr
     #features
       .container
         .row
-          h1.centered Freedom for Any Framework And
-          h3.centered For Any Type of Page
+          h1.centered Blogs, Landing Pages and Front-end Apps Made Easier
+          h3.centered Quick start with a website from a template
           br
           br
           .col-sm-12.col-lg-12.text-center
@@ -102,9 +70,39 @@ html(lang='en')
           .col-lg-offset-3.col-lg-6
             .row.clarity
               p.lead.text-center
-                | Use any Javascript framework without thinking about setup or
-                |  searching for a boilerplate. <b>Angular, React, Bootstrap</b>, you
-                |  name it.
+                | It is easier to change than to create anything from scratch.
+                |  Customize the template with <b>Bootstrap</b>,
+                |  <b>Angular.js</b>, <b>React.js</b> or drop in anything else
+                |  you have in mind.
+    #intro
+      .container
+        .row.centered
+          h1 Develop With Ease
+          br
+          br
+          .col-lg-4
+            img.feature(src='/img/2.svg', alt='')
+            h3 Gulp was Cool but we're Cooler
+            p
+              | Start writing <b>Jade, SCSS, CoffeeScript and Markdown</b>
+              |  - it will just work.
+              | Write <code>require('angular')</code> in your code and
+              |  <b>we will download it for you</b>.
+          .col-lg-4
+            img.feature(src='/img/4.svg', alt='')
+            h3 One-command Deployment
+            p
+              | A <b>single command</b> will make <b>your changes
+              |  instant</b>.
+              | Don't force a designer to learn git just to deploy your app.
+          .col-lg-4
+            img.feature(src='/img/3.svg', alt='')
+            h3 Server with Auto-Refresh
+            p
+              | <b>Automatic browser refresh</b> every time you
+              |  make an edit. Code even faster.
+        br
+        hr
     #platform
       .container
         .row
@@ -135,12 +133,12 @@ html(lang='en')
         br
         br
         .col-lg-4
-          img.feature(src='/img/4.svg', alt='')
-          h3 One-command Deployment
+          img.feature(src='/img/1.svg', alt='')
+          h3 Automated Dependencies
           p
-            | <b>Stop forcing your designer to learn git</b> and all of its tricks
-            |  just to deploy your app. A <b>single command</b> will make <b>your changes
-            |  live in under 10 seconds</b>.
+            | Just write <code>require('angular')</code> in your code and
+            |  <b>we will download it for you</b>.
+            |  Updating that package.json is not cool anymore.
         .col-lg-4
           img.feature(src='/img/5.svg', alt='')
           h3 Versioning via GitHub and Instant Rollbacks
@@ -150,57 +148,15 @@ html(lang='en')
             |  app versions</b> at any time also.
         .col-lg-4
           img.feature(src='/img/6.svg', alt='')
-          h3 99.99% Uptime
+          h3 Convert HTML to Jade
           p
-            | We've got your <b>back(ups)</b>. Your apps are always
-            |  up and running at a <b>blazing speed</b>.
+            | You can <b>start developing your old websites on new
+            |  technologies</b>.
+            |  Transform your files to a new language with a single command.
       br
-    #pricing
-      .container
-        .row.centered
-          h1 Simple Plans
-          .plans
-            .plan
-              h2.plan-title Team
-              p.plan-price
-                | $49
-                span /mo
-              ul.plan-features
-                li
-                  strong Unlimited
-                  |  apps
-                li
-                  strong Private
-                  |  repositories
-              // a.btn.btn-primary.outline(href='index.html') Get Started - $49
-            .plan.plan-tall
-              h2.plan-title Starter
-              p.plan-price
-                | $19
-                span /mo
-              ul.plan-features
-                li
-                  strong 5
-                  |  apps
-                li
-                  strong Private
-                  |  repositories
-              // a.btn.btn-primary.outline(href='index.html') Get Started - $19
-            .plan
-              h2.plan-title Free
-              p.plan-price
-                | $0
-                span /mo
-              ul.plan-features
-                li
-                  strong 1
-                  |  app
-                li
-                  strong Public
-                  |  repositories
-              // a.btn.btn-primary.outline(href='index.html') Get Started - $0
+
     .cta
-      a(href='http://app.closeheat.com/users/sign_up') Build an app free
+      a(href='http://app.closeheat.com/users/sign_up') Build a website now
 
     .centered#export
       p

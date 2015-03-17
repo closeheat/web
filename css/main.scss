@@ -188,10 +188,16 @@ Wrap Sections
   h1, h3 {
     color: #fff;
   }
+
+  .cta a {
+    font-size: 1.5em;
+    padding: .6em;
+    width: 350px;
+  }
 }
 
 .deploy-clarity {
-  padding-top: 3em;
+  padding-top: 1em;
 }
 
 #pricing {

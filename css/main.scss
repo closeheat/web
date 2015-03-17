@@ -185,14 +185,9 @@ Wrap Sections
   padding-top: 50px;
   padding-bottom: 50px;
   color: #fff;
+
   h1, h3 {
     color: #fff;
-  }
-
-  .cta a {
-    font-size: 1.5em;
-    padding: .6em;
-    width: 350px;
   }
 }
 
@@ -243,6 +238,10 @@ Wrap Sections
   color: white
 }
 
-.art h3 {
-  height: 2em;
+.art {
+  padding-top: 2em;
+
+  h3 {
+    height: 2em;
+  }
 }

@@ -9,7 +9,7 @@ $ ->
   initReferrer()
 
 initReferrer = ->
-  return if _.isString(cookies.get('ch_initial_referrer'))
+  return if cookies.get('ch_initial_referrer')
 
   cookies.set('ch_initial_referrer', document.referrer, domain: '.closeheat.com')
 

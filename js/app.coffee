@@ -1,10 +1,17 @@
 window.$ = window.jQuery = require 'jquery'
+cookies = require 'browser-cookies'
 require 'bootstrap'
 
 $ ->
   window.smoothScroll.init()
   initAnalytics()
   bindSendMessage()
+  initReferrer()
+
+initReferrer = ->
+  return if cookies.get('ch_initial_referrer') == null
+
+  cookies.set('ch_initial_referrer', document.referrer, domain: '.closeheat.com')
 
 initAnalytics = ->
   track('#headerwrap .cta a', 'Top hero CTA')

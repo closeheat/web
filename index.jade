@@ -35,9 +35,9 @@ html(lang='en')
           #navbar.navbar-collapse.collapse
             ul.nav.navbar-nav.navbar-right
               li
-                a(href='http://app.closeheat.com/users/sign_in') Log In
+                a(href='#pricing') Pricing
               li
-                p.navbar-text or
+                a(href='http://app.closeheat.com/users/sign_in') Log In
               li
                 p.navbar-btn
                   a.btn.btn-primary(href='http://app.closeheat.com/users/sign_up') Sign Up Free
@@ -46,125 +46,196 @@ html(lang='en')
       .container
         .row.centered
           .col-lg-12
-            h1 Ship Websites Faster
-            h3 Build front-end apps, landing pages and blogs with a modern toolkit
+            h1 Edit Landing Page Code In-browser
+            h3 We created it because Unbounce lacked this
         .row.centered
-          .cta.col-md-4.col-md-offset-4
-            a(href='http://app.closeheat.com/users/sign_up') Build a website now
+          .cta.col-md-6.col-md-offset-3
+            a(href='http://app.closeheat.com/users/sign_up') Create Landing Page Now
           .col-lg-offset-2.col-lg-8
-            a(href='http://app.closeheat.com/users/sign_up')
-              img.img-responsive(src='/img/hero.png', alt='')
+            a(href='http://app.closeheat.com/users/sign_in')
+              img.img-responsive(src='/img/hero1.jpg', alt='')
             p.clarity
-              | <b>closeheat</b> is a <b>hosting platform</b> and an
-              |  <b>intergrated toolkit</b>
-              |  for developing <b>landing pages</b>, <b>front-end apps</b>
-              |  and <b>blogs</b> with modern languages like <b>SCSS</b>,
-              |  <b>Jade</b> and <b>CoffeeScript</b>.
+              | <b>closeheat</b> is a <b>hosting platform</b> with an <b>in-browser editor</b>
+              |  to develop <b>landing pages</b>. Use <b>your</b> setup, have your code <b>versioned in Github</b>.
 
     #features
       .container
         .row
-          h1.centered Landing Pages, Front-end Apps and Blogs Made Easier
-          h3.centered Quick start with a website from a template
+          h1.centered High Converting Designs Without Setup
+          h3.centered Beautiful designs to make sure you have maximum chances
           br
           br
           .col-sm-12.col-lg-12.text-center
-            img.img-responsive.centered(src='img/freedom.png', alt='')
+            img.img-responsive.centered.very-rounded(src='img/designs.png', alt='')
           .col-lg-offset-3.col-lg-6
             .row.clarity
               p.lead.text-center
-                | It is easier to change than to create anything from scratch.
-                |  Customize the template with <b>Bootstrap</b>,
-                |  <b>Angular.js</b>, <b>React.js</b> and continue from there.
+                | 100% Customizable landing page templates out of the box. All of which works great
+                |  with lead pages.
     #intro
       .container
         .row.centered
-          h1 Develop with Ease
+          h1 Iterate with Ease
           br
           br
-          .col-lg-4
-            img.feature(src='/img/2.svg', alt='')
-            h3 Gulp was Cool but we're Cooler
-            p
-              | Start writing <b>Jade, SCSS, CoffeeScript and Markdown</b>
-              |  - it will just work.
-              | Write <code>require('angular')</code> in your code and
-              |  <b>we will download it for you</b>.
-          .col-lg-4
-            img.feature(src='/img/4.svg', alt='')
-            h3 One-command Deployment
-            p
-              | A <b>single command</b> will make <b>your changes
-              |  instant</b>.
-              | Don't force a designer to learn git just to deploy your app.
           .col-lg-4
             img.feature(src='/img/3.svg', alt='')
-            h3 Server with Auto-Refresh
+            h3 Edit Landing Pages in Browser
             p
-              | <b>Automatic browser refresh</b> every time you
-              |  make an edit. Code even faster.
+              | <b>Don't follow developer workflow when doing marketing.</b>
+              | Do small changes in the browser - publish them in 10 seconds.
+          .col-lg-4
+            img.feature(src='/img/2.svg', alt='')
+            h3 Edit Landing Pages Locally
+            p
+              | <b>Use your own setup when you like</b>. You can use our <b>command line tools</b>
+              |  and <b>publish changes with one-command instead of one-click</b>.
+          .col-lg-4
+            img.feature(src='/img/4.svg', alt='')
+            h3 One-click Publish
+            p
+              | A <b>single click</b> will make <b>your changes
+              |  instant</b>.
         br
-    #platform
-      .container
-        .row
-          h1.centered Deploy in One-command
-          h3.centered Have your code in GitHub and rollback instantly
-          br
-          .col-lg-12
-            img.img-responsive(src='/img/app-bg.png', alt='')
-          .col-lg-offset-2.col-lg-8
-            p.lead.deploy-clarity
-              | There's <b>no need to learn Git</b> to be able to rollback and
-              |  deploy your website. We've got <b>command-line
-              |  hating designers</b> in with us. It's simple enough for them
-              |  and we're working working on an even simpler UI for you guys.
-            p.text-center
-              .cta
-                a(href='http://app.closeheat.com/users/sign_up') Deploy website now
-    .container.art
-      .row.centered
-        h1 We Believe Coding is an Art
-        br
-        br
+    // #platform
+    //   .container
+    //     .row
+    //       h1.centered Deploy in One-command
+    //       h3.centered Have your code in GitHub and rollback instantly
+    //       br
+    //       .col-lg-12
+    //         img.img-responsive(src='/img/app-bg.png', alt='')
+    //       .col-lg-offset-2.col-lg-8
+    //         p.lead.deploy-clarity
+    //           | There's <b>no need to learn Git</b> to be able to rollback and
+    //           |  deploy your website. We've got <b>command-line
+    //           |  hating designers</b> in with us. It's simple enough for them
+    //           |  and we're working working on an even simpler UI for you guys.
+    //         p.text-center
+    //           .cta
+    //             a(href='http://app.closeheat.com/users/sign_up') Deploy website now
+    #pricing.pricetable
+      h1.text-center Affordable prices
+      h3.text-center Hours of your time saved
+      .row.table
         .col-lg-4
-          img.feature(src='/img/1.svg', alt='')
-          h3 Magical Dependencies
-          p
-            | Just write <code>require('angular')</code> in your code and
-            |  <b>we will download it for you</b>.
-            |  <kbd>package.json</kbd> will update automagically.
-        .col-lg-4
-          img.feature(src='/img/5.svg', alt='')
-          h3 Versioning via GitHub and Instant Rollbacks
-          p
-            | All of your code lives on <b>GitHub</b>. We'll <b>deploy it everytime
-            |  you push a change</b> there. You can <b>preview</b> any of your <b>old
-            |  app versions</b> at any time also.
-        .col-lg-4
-          img.feature(src='/img/6.svg', alt='')
-          h3 Don't be stuck with unmagical tech
-          p
-            | Transform your files to a new language with a single command.
-            |  You can <b>start developing your old websites on new
-            |  technologies</b>.
-      br
-
-      .cta.col-md-4.col-md-offset-4
-        a(href='http://app.closeheat.com/users/sign_up') Build a website now
+            .price
+              .name Basic
+              .total
+                span $
+                em(data-plan-price='basic') 19
+                small /mo
+              .subtotal Free 14 days trial period
+            .property 1 landing page
+            .options
+              ul.list-group
+                li.list-group-item.header For startupers who want to quickly validate their product.
+                li.list-group-item Your own Landing Page
+                li.list-group-item In-browser Code Editor
+                li.list-group-item Custom Domain
+                li.list-group-item Toolkit for Local Editing
+                li.list-group-item Code Versioning via Github
+                li.list-group-item Support &amp; Unlimited Hosting
+                li.list-group-item Unlimited Rollbacks
+                li.list-group-item
+                  a.btn(href='http://app.closeheat.com/users/sign_in') Create Landing Page Now!
+          .col-lg-4
+            .price
+              .recommended Recommended
+              .name Professional
+              .total
+                span $
+                em(data-plan-price='pro') 49
+                small /mo
+              .subtotal Free 14 days trial period
+            .property 3 Landing pages
+            .options
+              ul.list-group
+                li.list-group-item.header For startupers who want to quickly validate their product.
+                li.list-group-item Your own Landing Page
+                li.list-group-item In-browser Code Editor
+                li.list-group-item Custom Domain
+                li.list-group-item Toolkit for Local Editing
+                li.list-group-item Code Versioning via Github
+                li.list-group-item Support &amp; Unlimited Hosting
+                li.list-group-item Unlimited Rollbacks
+                li.list-group-item SSL
+                li.list-group-item
+                  a.btn(href='http://app.closeheat.com/users/sign_in') Create Landing Page Now!
+          .col-lg-4
+            .price
+              .name Team
+              .total
+                span $
+                em(data-plan-price='multi') 199
+                small /mo
+              .subtotal Free 14 days trial period
+            .property Unlimited Landing pages
+            .options
+              ul.list-group
+                li.list-group-item.header For teams & agencies who want to iterate quicker.
+                li.list-group-item Your own Landing Page
+                li.list-group-item In-browser Code Editor
+                li.list-group-item Custom Domain
+                li.list-group-item Toolkit for Local Editing
+                li.list-group-item Code Versioning via Github
+                li.list-group-item Support &amp; Unlimited Hosting
+                li.list-group-item Unlimited Rollbacks
+                li.list-group-item SSL
+                li.list-group-item App for Local Editing
+                li.list-group-item
+                  a.btn(href='http://app.closeheat.com/users/sign_in') Create Landing Page Now!
+    // .container.art
+    //   .row.centered
+    //     h1 We Believe Coding is an Art
+    //     br
+    //     br
+    //     .col-lg-4
+    //       img.feature(src='/img/1.svg', alt='')
+    //       h3 Magical Dependencies
+    //       p
+    //         | Just write <code>require('angular')</code> in your code and
+    //         |  <b>we will download it for you</b>.
+    //         |  <kbd>package.json</kbd> will update automagically.
+    //     .col-lg-4
+    //       img.feature(src='/img/5.svg', alt='')
+    //       h3 Versioning via GitHub and Instant Rollbacks
+    //       p
+    //         | All of your code lives on <b>GitHub</b>. We'll <b>deploy it everytime
+    //         |  you push a change</b> there. You can <b>preview</b> any of your <b>old
+    //         |  app versions</b> at any time also.
+    //     .col-lg-4
+    //       img.feature(src='/img/6.svg', alt='')
+    //       h3 Don't be stuck with unmagical tech
+    //       p
+    //         | Transform your files to a new language with a single command.
+    //         |  You can <b>start developing your old websites on new
+    //         |  technologies</b>.
+    //   br
+    //
+    //   .cta.col-md-4.col-md-offset-4
+    //     a(href='http://app.closeheat.com/users/sign_up') Build a website now
+    //
+    //   .col-md-12
+    //     .centered#export
+    //       strong Export anytime!
+    //       p
+    //         |  If you decide to go, you can export your app with
+    //         | a single command: <code>closeheat export</code>
 
     section#contact(name='contact')
     #footerwrap
       .container
         .col-lg-5
-          h3 Where are we
+          h3 We're in Stockholm
           p
-            | Saltiniu g. 1 - 28,
+            | <b>The startup city, ain't it?</b>
             br
-            | Vilnius,
+            | Kungsgatan 11, Stockholm
             br
             | 03218
             br
-            | Lithuania
+            | Sweden
         .col-lg-7
           h3 Drop Us A Line
           br

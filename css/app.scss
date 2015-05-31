@@ -1,0 +1,93 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300,600);
+
+@import '../vendor/css/materialize/components/normalize';
+@import '../vendor/css/materialize/components/color';
+@import 'materialize-variables';
+@import '../vendor/css/materialize/materialize';
+
+@import '../vendor/css/bootstrap/variables';
+@import '../vendor/css/bootstrap/mixins';
+@import '../vendor/css/bootstrap/grid';
+@import '../vendor/css/bootstrap/type';
+@import '../vendor/css/bootstrap/utilities';
+@import '../vendor/css/bootstrap/responsive-utilities';
+
+// for lists in pricing
+@import '../vendor/css/bootstrap/list-group';
+
+@import 'pricing';
+
+$no-color: hsla(0, 0%, 100%, 0);
+$white: color('grey', 'lighten-5');
+
+.btn,
+&.btn:hover {
+  @include box-shadow(none);
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -webkit-overflow-scrolling: touch;
+}
+
+nav {
+  @include box-shadow(none);
+  background: none;
+
+  position: absolute;
+  top: 0;
+  width: 100%;
+  padding: 30px 0 0;
+  height: 50px;
+
+  .logo img {
+    margin-top: 20px;
+    height: 30px;
+  }
+
+  ul li {
+    text-transform: uppercase;
+
+    a {
+      font-size: 13px;
+
+      &:not(.btn) {
+        @include transition(color .3s);
+
+        &:hover {
+          color: $secondary-color;
+        }
+      }
+    }
+
+    &:hover {
+      background-color: $no-color;
+    }
+
+    .sign-up {
+      margin-left: 15px;
+      padding: 0 15px;
+    }
+  }
+}
+
+.hero {
+  color: $white;
+  padding-top: 190px;
+  background-image: url('../img/banner.jpg');
+
+  .screenshot {
+    padding: 50px 0 30px;
+  }
+
+  .users {
+    background-color: color('grey', 'lighten-4');
+    height: 75px;
+
+    img {
+      height: 75px;
+      opacity: .3;
+    }
+  }
+}

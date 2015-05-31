@@ -3,6 +3,7 @@ cookies = require 'browser-cookies'
 require 'bootstrap'
 
 $ ->
+  $('.btn').addClass('waves-effect waves-light')
   window.smoothScroll.init()
   initAnalytics()
   bindSendMessage()

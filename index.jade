@@ -25,15 +25,19 @@ html(lang='en')
   body
     nav
       .container
-        a.logo(href='/')
-          img(src='/img/logo.png')
-        ul.right
-          li
-            a(href='#pricing') Pricing
-          li
-            a(href='http://app.closeheat.com/users/sign_in') Log In
-          li
-            a.btn.sign-up(href='http://app.closeheat.com/users/sign_up') Sign Up Free
+        .row
+          .col.s12.m6
+            a.logo(href='/')
+              img(src='/img/logo.png')
+          .col.s12.m6
+            .right
+              ul
+                li
+                  a(href='#pricing') Pricing
+                li
+                  a(href='http://app.closeheat.com/users/sign_in') Log In
+                li
+                  a.btn.sign-up(href='http://app.closeheat.com/users/sign_up') Sign Up Free
 
     .hero
       .container
@@ -42,10 +46,10 @@ html(lang='en')
             h1 Edit Landing Page Code In-browser
             h3 Ship Websites Faster
         .row.center-align
-          .col.m6.offset-m3
+          .col.m6.offset-m3.s10.offset-s1
             a.btn.btn-large.waves-effect.waves-light(href='http://app.closeheat.com/users/sign_in') Create Landing Page Now
         .row.screenshot
-          .col.m10.offset-m1
+          .col.m10.offset-m1.s12
             a(href='http://app.closeheat.com/users/sign_in')
               img.responsive-img(src='/img/hero1.jpg', alt='')
       .row.users.center-align

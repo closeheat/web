@@ -115,3 +115,30 @@ nav {
     }
   }
 }
+
+#team {
+  .avatar {
+    width: 200px;
+    height: 200px;
+    filter: grayscale(100%);
+    -webkit-filter: grayscale(100%);
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+
+    &:hover {
+      filter: none;
+      -webkit-filter: grayscale(0%);
+    }
+  }
+}
+
+#footerwrap {
+  ul {
+   list-style-type: none;
+   li a {
+     color: #ef5350;
+   }
+  }
+}

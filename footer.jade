@@ -1,0 +1,53 @@
+#footerwrap
+  .container
+    .row
+      .col.m5.l5.s12
+        h3 We're in Stockholm
+        p
+          | <b>The startup city, ain't it?</b>
+          br
+          | Kungsgatan 11, Stockholm
+          br
+          | 03218
+          br
+          | Sweden
+        p
+          ul
+            li
+              a(href="/#pricing") Pricing
+            li
+              a(href="/team") Team
+            li
+              a(href="/blog") Blog
+      .col.m7.l7.s12
+        h3 Drop Us A Line
+        form#drop-a-line(role='form')
+          .row
+            .input-field.col.m12.s12
+              input#your-email(type='email')
+              label(for='your-email') Your email address
+
+          .row
+            .input-field.col.m12.s12
+              textarea#your-message.materialize-textarea(rows='3')
+              label(for='your-message') Your message
+
+          button#send-message.btn.btn-large.btn-success SEND IT
+
+
+        #thanks-note.hide
+          p: b Thank you for everything!
+          p
+            | We'll contact you as soon as we find this.
+            br
+            i (usually in a few hours)
+
+        #error-note.hide
+          p: b There were errors sending your message.
+          p
+            | Feel free to email us directly on
+            |  <a href='mailto:support@closeheat.com'>support@closeheat.com</a>.
+            br
+            | We'll get back to you a soon as we find it.
+            br
+            i (usually in a few hours)

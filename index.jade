@@ -49,12 +49,18 @@ html(lang='en')
             a(href='http://app.closeheat.com/users/sign_in')
               img.responsive-img(src='/img/hero1.jpg', alt='')
       .row.users.center-align
-        div.integrates-with Easy integration with
-        img.responsive-img(src='/img/integrations/segment.png', alt='')
-        img.responsive-img(src='/img/integrations/github.png', alt='')
-        img.responsive-img(src='/img/integrations/optimizely.jpg', alt='')
-        img.responsive-img(src='/img/integrations/ga.png', alt='')
-        img.responsive-img(src='/img/integrations/vwo.jpeg', alt='')
+        .container
+          .row
+            div.col.m12.s12.integrates-with Easy integration with
+          .row.center-align
+            div.col.m3.s6
+              img(src='/img/integrations/segment.png', alt='')
+            div.col.m3.s6
+              img(src='/img/integrations/github.png', alt='')
+            div.col.m3.s6
+              img(src='/img/integrations/optimizely.jpg', alt='')
+            div.col.m3.s6
+              img(src='/img/integrations/ga.png', alt='')
         // .row
         //   p.clarity
         //     | <b>closeheat</b> is a <b>hosting platform</b> with an <b>in-browser editor</b>

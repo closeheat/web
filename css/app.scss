@@ -92,10 +92,9 @@ nav {
 
   .users {
     background-color: color('grey', 'lighten-4');
-    height: 100px;
 
     img {
-      height: 50px;
+      max-height: 50px;
       padding: 0 30px;
       opacity: .3;
       filter: grayscale(100%);

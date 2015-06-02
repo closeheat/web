@@ -22,62 +22,47 @@ html(lang='en')
       analytics.load('X8Da6RRazy6GokMZpxLQsVvCfcsOfCmQ');
       analytics.page()
       }}();
-  body
-    nav
-      .container
-        .row
-          .col.s12.m6
-            a.logo(href='/')
-              img(src='/img/logo.png')
-          .col.s12.m6
-            .right
-              ul
-                li
-                  a(href='/#pricing') Pricing
-                li
-                  a(href='http://app.closeheat.com/users/sign_in') Log In
-                li
-                  a.btn.sign-up(href='http://app.closeheat.com/users/sign_up') Sign Up Free
+  body#team
+    include ../partials/nav
 
     .hero
       .container
         .row.center-align
           .col.m12.s12
             h1 Our team
-    #team
-      .container.center-align
-        .row
-          .col.m1
-          .col.m4.offset-m1.s12.person
-            img.avatar.circle(src='/img/team/domas.jpg', alt='Domas Bitvinskas')
-            h1 Domas Bitvinskas
-            h3 CEO & Co-Founder
-            p
-              | Domas leads the company's vision and growth. The most important thing to him is to be focused on important things. But he's not scared to get his hands dirty either. He's gonna design and code it all just to make the experience for our clients beautiful.
-              | Constantly pushes his fears forward by doing all kinds of extreme sports - from skydiving to snowboarding.
-          .col.m4.offset-m1.s12.person
-            img.avatar.circle(src='/img/team/justas.jpeg', alt='Justas Palumickas')
-            h1 Justas Palumickas
-            h3 CTO & Co-Founder
-            p
-              | Justas is the one who brings the teams concepts, designs and technology together. Having an extensive experience in various IT companies before closeheat, he is always the last man standing in technology questions.
-        .row
-          .col.m1
-          .col.m4.offset-m1.s12.person
-            img.avatar.circle(src='/img/team/benas.jpg', alt='Benas Bitvinskas')
-            h1 Benas Bitvinskas
-            h3 CDO & Co-Founder
-            p
-              | Benas drives the company's design strategy and pushing the boundaries of user-centered design forward. Willing to stand on his head if this makes for a better user experience. Also digs brand design and does professional design for more than a year. He codes as well - a killer thing to do for a designer.
-          .col.m4.offset-m1.s12.person
-            img.avatar.circle(src='/img/team/vaida.jpg', alt='Vaida Lekavičiūtė')
-            h1 Vaida Lekavičiūtė
-            h3 Head of Public Relations
-            p
-              | Vaida leads company's social media efforts and relations. She is the one who sets the guidelines for our content's quality and forces us find better ways to express ourselves. Vaida brings a wealth of experience in Marketing, PR and Communications.
+    .container.center-align
+      .row
+        .col.m1
+        .col.m4.offset-m1.s12.person
+          img.avatar.circle(src='/img/team/domas.jpg', alt='Domas Bitvinskas')
+          h2 Domas Bitvinskas
+          h3 CEO & Co-Founder
+          p
+            | Domas leads the company's vision and growth. The most important thing to him is to be focused on important things. But he's not scared to get his hands dirty either. He's gonna design and code it all just to make the experience for our clients beautiful.
+            | Constantly pushes his fears forward by doing all kinds of extreme sports - from skydiving to snowboarding.
+        .col.m4.offset-m1.s12.person
+          img.avatar.circle(src='/img/team/justas.jpeg', alt='Justas Palumickas')
+          h2 Justas Palumickas
+          h3 CTO & Co-Founder
+          p
+            | Justas is the one who brings the teams concepts, designs and technology together. Having an extensive experience in various IT companies before closeheat, he is always the last man standing in technology questions.
+      .row
+        .col.m1
+        .col.m4.offset-m1.s12.person
+          img.avatar.circle(src='/img/team/benas.jpg', alt='Benas Bitvinskas')
+          h2 Benas Bitvinskas
+          h3 CDO & Co-Founder
+          p
+            | Benas drives the company's design strategy and pushing the boundaries of user-centered design forward. Willing to stand on his head if this makes for a better user experience. Also digs brand design and does professional design for more than a year. He codes as well - a killer thing to do for a designer.
+        .col.m4.offset-m1.s12.person
+          img.avatar.circle(src='/img/team/vaida.jpg', alt='Vaida Lekavičiūtė')
+          h2 Vaida Lekavičiūtė
+          h3 Head of Public Relations
+          p
+            | Vaida leads company's social media efforts and relations. She is the one who sets the guidelines for our content's quality and forces us find better ways to express ourselves. Vaida brings a wealth of experience in Marketing, PR and Communications.
 
 
-    br
-    br
+  br
+  br
 
-    include ../footer
+  include ../footer

@@ -34,9 +34,13 @@ body {
 
 h1 {
   font-size: 36px;
+  line-height: 36px;
+  margin: 0;
+  font-weight: 600;
 }
 
 h3 {
+  margin-top: 0;
   font-size: 24px;
 }
 
@@ -111,12 +115,20 @@ nav {
       vertical-align: middle;
       font-weight: 600;
       font-size: 12px;
-      padding: 10px 0 11px;
+      padding: 10px 0 0;
     }
   }
 }
 
 #team {
+  h1 {
+    padding-bottom: 40px;
+  }
+
+  h2 {
+    font-size: 36px;
+  }
+
   .avatar {
     width: 200px;
     height: 200px;
@@ -143,5 +155,22 @@ nav {
    li a {
      color: #ef5350;
    }
+  }
+}
+
+.feature {
+  padding: 75px 0 50px;
+
+  .description {
+    padding: 0 20px;
+
+    h2 {
+      font-size: 36px;
+      line-height: 40px;
+    }
+  }
+
+  .no-right-padding {
+    padding-right: 0;
   }
 }

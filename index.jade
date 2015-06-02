@@ -23,28 +23,14 @@ html(lang='en')
       analytics.page()
       }}();
   body
-    nav
-      .container
-        .row
-          .col.s12.m6
-            a.logo(href='/')
-              img(src='/img/logo.png')
-          .col.s12.m6
-            .right
-              ul
-                li
-                  a(href='#pricing') Pricing
-                li
-                  a(href='http://app.closeheat.com/users/sign_in') Log In
-                li
-                  a.btn.sign-up(href='http://app.closeheat.com/users/sign_up') Sign Up Free
+    include ./partials/nav
 
     .hero
       .container
         .row.center-align
           .col.m12
             h1 Edit Landing Page Code In-browser
-            h3 Ship Websites Faster
+            h3 Quickly build high-converting custom landing pages
         .row.center-align
           .col.m6.offset-m3.s10.offset-s1
             a.btn.btn-large.waves-effect.waves-light(href='http://app.closeheat.com/users/sign_in') Create Landing Page Now
@@ -70,62 +56,33 @@ html(lang='en')
         //     | <b>closeheat</b> is a <b>hosting platform</b> with an <b>in-browser editor</b>
         //     |  to develop <b>landing pages</b>. Use <b>your</b> setup, have your code <b>versioned in Github</b>.
 
-    .features.center-align
-      .container
-        .row
-          h1 High Converting Designs Without Setup
-          h3 Beautiful designs to make sure you have maximum chances
-          br
-          br
-          .col.m12.center-align
-            img.responsive-img.very-rounded(src='img/designs.png', alt='Designs')
-          .col.offset-m3.m6
-            .row.clarity
-              p.lead.center-align
-                | 100% Customizable landing page templates out of the box. All of which works great
-                |  with lead pages.
-    #intro
-      .container
-        .row.centered
-          h1 Iterate with Ease
-          br
-          br
-          .col.m4
-            img.feature(src='/img/3.svg', alt='')
-            h3 Edit Landing Pages in Browser
-            p
-              | <b>Don't follow developer workflow when doing marketing.</b>
-              | Do small changes in the browser - publish them in 10 seconds.
-          .col.m4
-            img.feature(src='/img/2.svg', alt='')
-            h3 Edit Landing Pages Locally
-            p
-              | <b>Use your own setup when you like</b>. You can use our <b>command line tools</b>
-              |  and <b>publish changes with one-command instead of one-click</b>.
-          .col.m4
-            img.feature(src='/img/4.svg', alt='')
-            h3 One-click Publish
-            p
-              | A <b>single click</b> will make <b>your changes
-              |  instant</b>.
-        br
-    // #platform
-    //   .container
-    //     .row
-    //       h1.centered Deploy in One-command
-    //       h3.centered Have your code in GitHub and rollback instantly
-    //       br
-    //       .col-lg-12
-    //         img.img-responsive(src='/img/app-bg.png', alt='')
-    //       .col-lg-offset-2.col-lg-8
-    //         p.lead.deploy-clarity
-    //           | There's <b>no need to learn Git</b> to be able to rollback and
-    //           |  deploy your website. We've got <b>command-line
-    //           |  hating designers</b> in with us. It's simple enough for them
-    //           |  and we're working working on an even simpler UI for you guys.
-    //         p.text-center
-    //           .cta
-    //             a(href='http://app.closeheat.com/users/sign_up') Deploy website now
+    .features
+      .feature.row.valign-wrapper
+        .col.m5.description.valign
+          h2 Use beautiful template or import your own HTML
+          p.flow-text
+            | 100% Customizable landing page templates out of the box. All of which works great
+            | with lead pages.
+            | Unique landing page templates optimized for conversion.
+        .col.offset-m1.m6.no-right-padding.valign
+          img.responsive-img(src='img/showcase/designs.gif', alt='Designs')
+      .feature.row.valign-wrapper
+        .col.m5.description.valign
+          h2 Change landing pages faster than ever before
+          p.flow-text
+            | Make changes in your browser. Don't follow developer workflow when doing marketing.
+            | Do small changes in the browser - publish them in 10 seconds.
+        .col.offset-m1.m6.no-right-padding.valign
+          img.responsive-img(src='img/showcase/designs.gif', alt='Designs')
+      .feature.row.valign-wrapper
+        .col.m5.description.valign
+          h2 Beautiful developer experience with Github
+          p.flow-text
+            | Use your own setup when you like. Sublime Text, Github Client, you name it.
+            | You can also use our command line tools and publish changes with one-command instead
+            | of one-click.
+        .col.offset-m1.m6.no-right-padding.valign
+          img.responsive-img(src='img/showcase/github.png', alt='Github')
     #pricing.pricetable
       .container
         h1.center-align Affordable prices
@@ -198,42 +155,5 @@ html(lang='en')
                 li.list-group-item App for Local Editing
                 li.list-group-item
                   a.btn(href='http://app.closeheat.com/users/sign_in') Create Landing Page Now!
-    // .container.art
-    //   .row.centered
-    //     h1 We Believe Coding is an Art
-    //     br
-    //     br
-    //     .col-lg-4
-    //       img.feature(src='/img/1.svg', alt='')
-    //       h3 Magical Dependencies
-    //       p
-    //         | Just write <code>require('angular')</code> in your code and
-    //         |  <b>we will download it for you</b>.
-    //         |  <kbd>package.json</kbd> will update automagically.
-    //     .col-lg-4
-    //       img.feature(src='/img/5.svg', alt='')
-    //       h3 Versioning via GitHub and Instant Rollbacks
-    //       p
-    //         | All of your code lives on <b>GitHub</b>. We'll <b>deploy it everytime
-    //         |  you push a change</b> there. You can <b>preview</b> any of your <b>old
-    //         |  app versions</b> at any time also.
-    //     .col-lg-4
-    //       img.feature(src='/img/6.svg', alt='')
-    //       h3 Don't be stuck with unmagical tech
-    //       p
-    //         | Transform your files to a new language with a single command.
-    //         |  You can <b>start developing your old websites on new
-    //         |  technologies</b>.
-    //   br
-    //
-    //   .cta.col-md-4.col-md-offset-4
-    //     a(href='http://app.closeheat.com/users/sign_up') Build a website now
-    //
-    //   .col-md-12
-    //     .centered#export
-    //       strong Export anytime!
-    //       p
-    //         |  If you decide to go, you can export your app with
-    //         | a single command: <code>closeheat export</code>
 
     include footer

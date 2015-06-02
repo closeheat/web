@@ -7,10 +7,6 @@
 
 @import '../vendor/css/bootstrap/variables';
 @import '../vendor/css/bootstrap/mixins';
-// @import '../vendor/css/bootstrap/grid';
-// @import '../vendor/css/bootstrap/type';
-// @import '../vendor/css/bootstrap/utilities';
-// @import '../vendor/css/bootstrap/responsive-utilities';
 
 // for lists in pricing
 @import '../vendor/css/bootstrap/list-group';
@@ -149,7 +145,9 @@ nav {
   }
 }
 
-#footerwrap {
+footer {
+  padding: 50px;
+
   ul {
    list-style-type: none;
    li a {

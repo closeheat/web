@@ -7,10 +7,10 @@
 
 @import '../vendor/css/bootstrap/variables';
 @import '../vendor/css/bootstrap/mixins';
-@import '../vendor/css/bootstrap/grid';
-@import '../vendor/css/bootstrap/type';
-@import '../vendor/css/bootstrap/utilities';
-@import '../vendor/css/bootstrap/responsive-utilities';
+// @import '../vendor/css/bootstrap/grid';
+// @import '../vendor/css/bootstrap/type';
+// @import '../vendor/css/bootstrap/utilities';
+// @import '../vendor/css/bootstrap/responsive-utilities';
 
 // for lists in pricing
 @import '../vendor/css/bootstrap/list-group';
@@ -30,6 +30,14 @@ body {
   font-family: 'Open Sans', sans-serif;
   -webkit-font-smoothing: antialiased;
   -webkit-overflow-scrolling: touch;
+}
+
+h1 {
+  font-size: 36px;
+}
+
+h3 {
+  font-size: 24px;
 }
 
 nav {
@@ -77,6 +85,10 @@ nav {
   color: $white;
   padding-top: 190px;
   background-image: url('../img/banner.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width:100%;
 
   .screenshot {
     padding: 50px 0 30px;
@@ -84,10 +96,9 @@ nav {
 
   .users {
     background-color: color('grey', 'lighten-4');
-    height: 100px;
 
     img {
-      height: 50px;
+      max-height: 50px;
       padding: 0 30px;
       opacity: .3;
       filter: grayscale(100%);

@@ -25,53 +25,63 @@ html(lang='en')
   body
     nav
       .container
-        a.logo(href='/')
-          img(src='/img/logo.png')
-        ul.right
-          li
-            a(href='#pricing') Pricing
-          li
-            a(href='http://app.closeheat.com/users/sign_in') Log In
-          li
-            a.btn.sign-up(href='http://app.closeheat.com/users/sign_up') Sign Up Free
+        .row
+          .col.s12.m6
+            a.logo(href='/')
+              img(src='/img/logo.png')
+          .col.s12.m6
+            .right
+              ul
+                li
+                  a(href='#pricing') Pricing
+                li
+                  a(href='http://app.closeheat.com/users/sign_in') Log In
+                li
+                  a.btn.sign-up(href='http://app.closeheat.com/users/sign_up') Sign Up Free
 
     .hero
       .container
-        .row.text-center
-          .col-lg-12
+        .row.center-align
+          .col.m12
             h1 Edit Landing Page Code In-browser
             h3 Ship Websites Faster
-        .row.text-center
-          .col-md-6.col-md-offset-3
+        .row.center-align
+          .col.m6.offset-m3.s10.offset-s1
             a.btn.btn-large.waves-effect.waves-light(href='http://app.closeheat.com/users/sign_in') Create Landing Page Now
         .row.screenshot
-          .col-lg-offset-1.col-lg-10
+          .col.m10.offset-m1.s12
             a(href='http://app.closeheat.com/users/sign_in')
               img.responsive-img(src='/img/hero1.jpg', alt='')
-      .row.users.text-center
-        div.integrates-with Easy integration with
-        img.responsive-img(src='/img/integrations/segment.png', alt='')
-        img.responsive-img(src='/img/integrations/github.png', alt='')
-        img.responsive-img(src='/img/integrations/optimizely.jpg', alt='')
-        img.responsive-img(src='/img/integrations/ga.png', alt='')
-        img.responsive-img(src='/img/integrations/vwo.jpeg', alt='')
+      .row.users.center-align
+        .container
+          .row
+            div.col.m12.s12.integrates-with Easy integration with
+          .row.center-align
+            div.col.m3.s6
+              img(src='/img/integrations/segment.png', alt='')
+            div.col.m3.s6
+              img(src='/img/integrations/github.png', alt='')
+            div.col.m3.s6
+              img(src='/img/integrations/optimizely.jpg', alt='')
+            div.col.m3.s6
+              img(src='/img/integrations/ga.png', alt='')
         // .row
         //   p.clarity
         //     | <b>closeheat</b> is a <b>hosting platform</b> with an <b>in-browser editor</b>
         //     |  to develop <b>landing pages</b>. Use <b>your</b> setup, have your code <b>versioned in Github</b>.
 
-    .features.text-center
+    .features.center-align
       .container
         .row
           h1 High Converting Designs Without Setup
           h3 Beautiful designs to make sure you have maximum chances
           br
           br
-          .col-sm-12.col-lg-12.text-center
+          .col.m12.center-align
             img.responsive-img.very-rounded(src='img/designs.png', alt='')
-          .col-lg-offset-3.col-lg-6
+          .col.offset-m3.m6
             .row.clarity
-              p.lead.text-center
+              p.lead.center-align
                 | 100% Customizable landing page templates out of the box. All of which works great
                 |  with lead pages.
     #intro
@@ -80,19 +90,19 @@ html(lang='en')
           h1 Iterate with Ease
           br
           br
-          .col-lg-4
+          .col.m4
             img.feature(src='/img/3.svg', alt='')
             h3 Edit Landing Pages in Browser
             p
               | <b>Don't follow developer workflow when doing marketing.</b>
               | Do small changes in the browser - publish them in 10 seconds.
-          .col-lg-4
+          .col.m4
             img.feature(src='/img/2.svg', alt='')
             h3 Edit Landing Pages Locally
             p
               | <b>Use your own setup when you like</b>. You can use our <b>command line tools</b>
               |  and <b>publish changes with one-command instead of one-click</b>.
-          .col-lg-4
+          .col.m4
             img.feature(src='/img/4.svg', alt='')
             h3 One-click Publish
             p
@@ -117,10 +127,11 @@ html(lang='en')
     //           .cta
     //             a(href='http://app.closeheat.com/users/sign_up') Deploy website now
     #pricing.pricetable
-      h1.text-center Affordable prices
-      h3.text-center Hours of your time saved
-      .row.table
-        .col-lg-4
+      .container
+        h1.center-align Affordable prices
+        h3.center-align Hours of your time saved
+        .row.table
+          .col.m4.s12
             .price
               .name Basic
               .total
@@ -141,7 +152,7 @@ html(lang='en')
                 li.list-group-item Unlimited Rollbacks
                 li.list-group-item
                   a.btn(href='http://app.closeheat.com/users/sign_in') Create Landing Page Now!
-          .col-lg-4
+          .col.m4.s12
             .price
               .recommended Recommended
               .name Professional
@@ -164,7 +175,7 @@ html(lang='en')
                 li.list-group-item SSL
                 li.list-group-item
                   a.btn(href='http://app.closeheat.com/users/sign_in') Create Landing Page Now!
-          .col-lg-4
+          .col.m4.s12
             .price
               .name Team
               .total
@@ -228,40 +239,46 @@ html(lang='en')
     section#contact(name='contact')
     #footerwrap
       .container
-        .col-lg-5
-          h3 We're in Stockholm
-          p
-            | <b>The startup city, ain't it?</b>
-            br
-            | Kungsgatan 11, Stockholm
-            br
-            | 03218
-            br
-            | Sweden
-        .col-lg-7
-          h3 Drop Us A Line
-          br
-          form#drop-a-line(role='form')
-            .form-group
-              input#your-email.form-control(type='email', placeholder='Your email address')
-            .form-group
-              textarea#your-message.form-control(placeholder='Your message', rows='3')
-            br
-            button#send-message.btn.btn-large.btn-success SEND IT
-
-          #thanks-note.hidden
-            p: b Thank you for everything!
+        .row
+          .col.m5.l5.s12
+            h3 We're in Stockholm
             p
-              | We'll contact you as soon as we find this.
+              | <b>The startup city, ain't it?</b>
               br
-              i (usually in a few hours)
+              | Kungsgatan 11, Stockholm
+              br
+              | 03218
+              br
+              | Sweden
+          .col.m7.l7.s12
+            h3 Drop Us A Line
+            form#drop-a-line(role='form')
+              .row
+                .input-field.col.m12.s12
+                  input#your-email(type='email')
+                  label(for='your-email') Your email address
 
-          #error-note.hidden
-            p: b There were errors sending your message.
-            p
-              | Feel free to email us directly on
-              |  <a href='mailto:support@closeheat.com'>support@closeheat.com</a>.
-              br
-              | We'll get back to you a soon as we find it.
-              br
-              i (usually in a few hours)
+              .row
+                .input-field.col.m12.s12
+                  textarea#your-message.materialize-textarea(rows='3')
+                  label(for='your-message') Your message
+
+              button#send-message.btn.btn-large.btn-success SEND IT
+
+
+            #thanks-note.hide
+              p: b Thank you for everything!
+              p
+                | We'll contact you as soon as we find this.
+                br
+                i (usually in a few hours)
+
+            #error-note.hide
+              p: b There were errors sending your message.
+              p
+                | Feel free to email us directly on
+                |  <a href='mailto:support@closeheat.com'>support@closeheat.com</a>.
+                br
+                | We'll get back to you a soon as we find it.
+                br
+                i (usually in a few hours)

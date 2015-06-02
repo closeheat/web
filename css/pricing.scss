@@ -6,8 +6,12 @@
 
 // EVERYTHINGS COPIED FROM THIS LINE
 .pricetable {
-    background-color: #ebf5f3;
+    background-color: #1F4C70;
     padding: 75px 0 0
+}
+
+.pricetable h1, .pricetable h3 {
+  color: #fff;
 }
 .pricetable .time {
     width: 420px;
@@ -42,7 +46,6 @@
     top: -10px;
     right: -10px;
     z-index: 3;
-    background-color: #fa4133;
     color: #fff;
     font-size: 12px;
     text-align: center;
@@ -60,7 +63,7 @@
     font-size: 9px
 }
 .pricetable .table {
-    width: 1020px;
+    // width: 1020px;
     margin: 85px auto 0;
     padding: 0 0 60px
 }
@@ -153,7 +156,6 @@
 }
 .pricetable .table .options .list-group .list-group-item a.btn {
     color: #fff;
-    background-color: #fa4133;
     font-weight: bold;
     width: 100%
 }

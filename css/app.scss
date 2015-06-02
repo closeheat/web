@@ -19,6 +19,7 @@
 
 $no-color: hsla(0, 0%, 100%, 0);
 $white: color('grey', 'lighten-5');
+$black: color('grey', 'darken-1');
 
 .btn,
 &.btn:hover {
@@ -83,11 +84,23 @@ nav {
 
   .users {
     background-color: color('grey', 'lighten-4');
-    height: 75px;
+    height: 100px;
 
     img {
-      height: 75px;
+      height: 50px;
+      padding: 0 30px;
       opacity: .3;
+      filter: grayscale(100%);
+      -webkit-filter: grayscale(100%);
+    }
+
+    .integrates-with {
+      color: $black;
+      text-transform: uppercase;
+      vertical-align: middle;
+      font-weight: 600;
+      font-size: 12px;
+      padding: 10px 0 11px;
     }
   }
 }

@@ -32,6 +32,14 @@ body {
   -webkit-overflow-scrolling: touch;
 }
 
+h1 {
+  font-size: 36px;
+}
+
+h3 {
+  font-size: 24px;
+}
+
 nav {
   @include box-shadow(none);
   background: none;

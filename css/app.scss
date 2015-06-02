@@ -85,6 +85,10 @@ nav {
   color: $white;
   padding-top: 190px;
   background-image: url('../img/banner.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width:100%;
 
   .screenshot {
     padding: 50px 0 30px;

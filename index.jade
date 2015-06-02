@@ -1,159 +1,128 @@
-doctype html
-html(lang='en')
-  head
-    meta(charset='utf-8')
-    meta(name='viewport', content='width=device-width, initial-scale=1.0')
-    meta(name='description', content='closeheat - Automated toolkit for monkey tasks and a powerful hosting platform')
-    meta(property='og:image' content='http://closeheat.com/img/ogimage.png')
-    meta(property='og:title' content='Supercharge Your Web App Workflow')
-    meta(property='og:description' content='Automated toolkit for monkey tasks and a powerful hosting platform')
-    title closeheat - Ship Websites Faster
-    link(href='css/app.css', rel='stylesheet')
-    link(href='http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,900', rel='stylesheet', type='text/css')
-    link(href='http://fonts.googleapis.com/css?family=Raleway:400,300,700', rel='stylesheet', type='text/css')
-    script(src='js/app.js')
-    script(src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.96.1/js/materialize.min.js")
-    script(src='js/smoothscroll.min.js')
-    meta(name="google-site-verification" content="CeTknMlUfxMoa1-6oTNVihlqcCXhYTI7qfocIiWtxDI")
+extends partials/hero-layout
 
-    include favicons
-    script.
-      !function(){var analytics=window.analytics=window.analytics||[];if(!analytics.initialize)if(analytics.invoked)window.console&&console.error&&console.error("Segment snippet included twice.");else{analytics.invoked=!0;analytics.methods=["trackSubmit","trackClick","trackLink","trackForm","pageview","identify","group","track","ready","alias","page","once","off","on"];analytics.factory=function(t){return function(){var e=Array.prototype.slice.call(arguments);e.unshift(t);analytics.push(e);return analytics}};for(var t=0;t<analytics.methods.length;t++){var e=analytics.methods[t];analytics[e]=analytics.factory(e)}analytics.load=function(t){var e=document.createElement("script");e.type="text/javascript";e.async=!0;e.src=("https:"===document.location.protocol?"https://":"http://")+"cdn.segment.com/analytics.js/v1/"+t+"/analytics.min.js";var n=document.getElementsByTagName("script")[0];n.parentNode.insertBefore(e,n)};analytics.SNIPPET_VERSION="3.0.1";
-      analytics.load('X8Da6RRazy6GokMZpxLQsVvCfcsOfCmQ');
-      analytics.page()
-      }}();
-  body
-    include ./partials/nav
-
-    .hero
+block content
+  .hero
+    .container
+      .row.center-align
+        .col.m12
+          h1 Edit Landing Page Code In-browser
+          h3 Quickly build high-converting custom landing pages
+      .row.center-align
+        .col.m6.offset-m3.s10.offset-s1
+          a.btn.btn-large.waves-effect.waves-light(href='http://app.closeheat.com/users/sign_in') Create Landing Page Now
+      .row.screenshot
+        .col.m10.offset-m1.s12
+          a(href='http://app.closeheat.com/users/sign_in')
+            img.responsive-img(src='/img/hero1.jpg', alt='')
+    .row.users.center-align
       .container
+        .row
+          div.col.m12.s12.integrates-with Easy integration with
         .row.center-align
-          .col.m12
-            h1 Edit Landing Page Code In-browser
-            h3 Quickly build high-converting custom landing pages
-        .row.center-align
-          .col.m6.offset-m3.s10.offset-s1
-            a.btn.btn-large.waves-effect.waves-light(href='http://app.closeheat.com/users/sign_in') Create Landing Page Now
-        .row.screenshot
-          .col.m10.offset-m1.s12
-            a(href='http://app.closeheat.com/users/sign_in')
-              img.responsive-img(src='/img/hero1.jpg', alt='')
-      .row.users.center-align
-        .container
-          .row
-            div.col.m12.s12.integrates-with Easy integration with
-          .row.center-align
-            div.col.m3.s6
-              img(src='/img/integrations/segment.png', alt='Segment')
-            div.col.m3.s6
-              img(src='/img/integrations/github.png', alt='GitHub')
-            div.col.m3.s6
-              img(src='/img/integrations/optimizely.jpg', alt='Optimizely')
-            div.col.m3.s6
-              img(src='/img/integrations/ga.png', alt='Google Analytics')
-        // .row
-        //   p.clarity
-        //     | <b>closeheat</b> is a <b>hosting platform</b> with an <b>in-browser editor</b>
-        //     |  to develop <b>landing pages</b>. Use <b>your</b> setup, have your code <b>versioned in Github</b>.
-
-    .features
-      .feature.row.valign-wrapper
-        .col.m5.description.valign
-          h2 Use beautiful template or import your own HTML
-          p.flow-text
-            | 100% Customizable landing page templates out of the box. All of which works great
-            | with lead pages.
-            | Unique landing page templates optimized for conversion.
-        .col.offset-m1.m6.no-right-padding.valign
-          img.responsive-img(src='img/showcase/designs.gif', alt='Designs')
-      .feature.row.valign-wrapper
-        .col.m5.description.valign
-          h2 Change landing pages faster than ever before
-          p.flow-text
-            | Make changes in your browser. Don't follow developer workflow when doing marketing.
-            | Do small changes in the browser - publish them in 10 seconds.
-        .col.offset-m1.m6.no-right-padding.valign
-          img.responsive-img(src='img/showcase/designs.gif', alt='Designs')
-      .feature.row.valign-wrapper
-        .col.m5.description.valign
-          h2 Beautiful developer experience with GitHub
-          p.flow-text
-            | Use your own setup when you like. Sublime Text, GitHub Client, you name it.
-            | You can also use our command line tools and publish changes with one-command instead
-            | of one-click.
-        .col.offset-m1.m6.no-right-padding.valign
-          img.responsive-img(src='img/showcase/github.png', alt='Github')
-    #pricing.pricetable
-      .container
-        h1.center-align Affordable prices
-        h3.center-align Hours of your time saved
-        .row.table
-          .col.m4.s12
-            .price
-              .name Basic
-              .total
-                span $
-                em(data-plan-price='basic') 19
-                small /mo
-              .subtotal Free 14 days trial period
-            .property 1 landing page
-            .options
-              ul.list-group
-                li.list-group-item.header For startupers who want to quickly validate their product.
-                li.list-group-item Your own Landing Page
-                li.list-group-item In-browser Code Editor
-                li.list-group-item Custom Domain
-                li.list-group-item Toolkit for Local Editing
-                li.list-group-item Code Versioning via GitHub
-                li.list-group-item Support &amp; Unlimited Hosting
-                li.list-group-item Unlimited Rollbacks
-                li.list-group-item
-                  a.btn(href='http://app.closeheat.com/users/sign_in') Create Landing Page Now!
-          .col.m4.s12
-            .price
-              .recommended Recommended
-              .name Professional
-              .total
-                span $
-                em(data-plan-price='pro') 49
-                small /mo
-              .subtotal Free 14 days trial period
-            .property 3 Landing pages
-            .options
-              ul.list-group
-                li.list-group-item.header For startupers who want to quickly validate their product.
-                li.list-group-item Your own Landing Page
-                li.list-group-item In-browser Code Editor
-                li.list-group-item Custom Domain
-                li.list-group-item Toolkit for Local Editing
-                li.list-group-item Code Versioning via GitHub
-                li.list-group-item Support &amp; Unlimited Hosting
-                li.list-group-item Unlimited Rollbacks
-                li.list-group-item SSL
-                li.list-group-item
-                  a.btn(href='http://app.closeheat.com/users/sign_in') Create Landing Page Now!
-          .col.m4.s12
-            .price
-              .name Team
-              .total
-                span $
-                em(data-plan-price='multi') 199
-                small /mo
-              .subtotal Free 14 days trial period
-            .property Unlimited Landing pages
-            .options
-              ul.list-group
-                li.list-group-item.header For teams & agencies who want to iterate quicker.
-                li.list-group-item Your own Landing Page
-                li.list-group-item In-browser Code Editor
-                li.list-group-item Custom Domain
-                li.list-group-item Toolkit for Local Editing
-                li.list-group-item Code Versioning via GitHub
-                li.list-group-item Support &amp; Unlimited Hosting
-                li.list-group-item Unlimited Rollbacks
-                li.list-group-item SSL
-                li.list-group-item App for Local Editing
-                li.list-group-item
-                  a.btn(href='http://app.closeheat.com/users/sign_in') Create Landing Page Now!
-
-    include footer
+          div.col.m3.s6
+            img(src='/img/integrations/segment.png', alt='Segment')
+          div.col.m3.s6
+            img(src='/img/integrations/github.png', alt='GitHub')
+          div.col.m3.s6
+            img(src='/img/integrations/optimizely.jpg', alt='Optimizely')
+          div.col.m3.s6
+            img(src='/img/integrations/ga.png', alt='Google Analytics')
+  .features
+    .feature.row.valign-wrapper
+      .col.m5.description.valign
+        h2 Use beautiful template or import your own HTML
+        p.flow-text
+          | 100% Customizable landing page templates out of the box. All of which works great
+          | with lead pages.
+          | Unique landing page templates optimized for conversion.
+      .col.offset-m1.m6.no-right-padding.valign
+        img.responsive-img(src='img/showcase/designs.gif', alt='Designs')
+    .feature.row.valign-wrapper
+      .col.m5.description.valign
+        h2 Change landing pages faster than ever before
+        p.flow-text
+          | Make changes in your browser. Don't follow developer workflow when doing marketing.
+          | Do small changes in the browser - publish them in 10 seconds.
+      .col.offset-m1.m6.no-right-padding.valign
+        img.responsive-img(src='img/showcase/designs.gif', alt='Designs')
+    .feature.row.valign-wrapper
+      .col.m5.description.valign
+        h2 Beautiful developer experience with GitHub
+        p.flow-text
+          | Use your own setup when you like. Sublime Text, GitHub Client, you name it.
+          | You can also use our command line tools and publish changes with one-command instead
+          | of one-click.
+      .col.offset-m1.m6.no-right-padding.valign
+        img.responsive-img(src='img/showcase/github.png', alt='Github')
+  #pricing.pricetable
+    .container
+      h1.center-align Affordable prices
+      h3.center-align Hours of your time saved
+      .row.table
+        .col.m4.s12
+          .price
+            .name Basic
+            .total
+              span $
+              em(data-plan-price='basic') 19
+              small /mo
+            .subtotal Free 14 days trial period
+          .property 1 landing page
+          .options
+            ul.list-group
+              li.list-group-item.header For startupers who want to quickly validate their product.
+              li.list-group-item Your own Landing Page
+              li.list-group-item In-browser Code Editor
+              li.list-group-item Custom Domain
+              li.list-group-item Toolkit for Local Editing
+              li.list-group-item Code Versioning via GitHub
+              li.list-group-item Support &amp; Unlimited Hosting
+              li.list-group-item Unlimited Rollbacks
+              li.list-group-item
+                a.btn(href='http://app.closeheat.com/users/sign_in') Create Landing Page Now!
+        .col.m4.s12
+          .price
+            .recommended Recommended
+            .name Professional
+            .total
+              span $
+              em(data-plan-price='pro') 49
+              small /mo
+            .subtotal Free 14 days trial period
+          .property 3 Landing pages
+          .options
+            ul.list-group
+              li.list-group-item.header For startupers who want to quickly validate their product.
+              li.list-group-item Your own Landing Page
+              li.list-group-item In-browser Code Editor
+              li.list-group-item Custom Domain
+              li.list-group-item Toolkit for Local Editing
+              li.list-group-item Code Versioning via GitHub
+              li.list-group-item Support &amp; Unlimited Hosting
+              li.list-group-item Unlimited Rollbacks
+              li.list-group-item SSL
+              li.list-group-item
+                a.btn(href='http://app.closeheat.com/users/sign_in') Create Landing Page Now!
+        .col.m4.s12
+          .price
+            .name Team
+            .total
+              span $
+              em(data-plan-price='multi') 199
+              small /mo
+            .subtotal Free 14 days trial period
+          .property Unlimited Landing pages
+          .options
+            ul.list-group
+              li.list-group-item.header For teams & agencies who want to iterate quicker.
+              li.list-group-item Your own Landing Page
+              li.list-group-item In-browser Code Editor
+              li.list-group-item Custom Domain
+              li.list-group-item Toolkit for Local Editing
+              li.list-group-item Code Versioning via GitHub
+              li.list-group-item Support &amp; Unlimited Hosting
+              li.list-group-item Unlimited Rollbacks
+              li.list-group-item SSL
+              li.list-group-item App for Local Editing
+              li.list-group-item
+                a.btn(href='http://app.closeheat.com/users/sign_in') Create Landing Page Now!

@@ -16,6 +16,12 @@
 @import 'team';
 @import 'blog';
 
+.no-valign-wrapper-on-mobile {
+  @media #{$small-and-down} {
+    display: block;
+  }
+}
+
 .btn,
 &.btn:hover {
   @include box-shadow(none);
@@ -84,6 +90,9 @@ nav {
 .hero {
   color: $white;
   padding-top: 190px;
+  @media #{$small-and-down} {
+    padding-top: 250px;
+  }
   background-image: url('../img/banner.jpg');
   background-size: cover;
   background-position: center;
@@ -99,7 +108,6 @@ nav {
 
     img {
       max-height: 50px;
-      padding: 0 30px;
       opacity: .3;
       filter: grayscale(100%);
       -webkit-filter: grayscale(100%);
@@ -142,4 +150,5 @@ footer {
   .no-right-padding {
     padding-right: 0;
   }
+
 }

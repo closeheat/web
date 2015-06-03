@@ -1,0 +1,23 @@
+extends ../partials/hero-layout
+
+block content
+  .blog
+    .hero
+      .container
+          .row.center-align
+            .col.m12.s12
+              h1 We write things
+    .container
+      .row
+        .col.offset-m2.m8
+          h2.center-align One Thing Successful Companies Do
+          h6.date.center-align 2016-06-03
+          .post-content
+            include:md blogposts/one-thing.md
+
+          .row
+            .col.m2
+              img.responsive-img.circle(src='/img/team/domas.jpg', alt='Domas Bitvinskas')
+            .col.m9.author-description
+              p Domas Bitvinskas
+              p CEO & Co-Founder of closeheat

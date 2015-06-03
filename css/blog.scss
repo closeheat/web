@@ -1,0 +1,32 @@
+@import 'variables';
+
+.blog {
+  padding-bottom: 50px;
+
+  h1 {
+    padding-bottom: 40px;
+  }
+
+  h2 {
+    font-size: 30px;
+    padding: 0;
+    margin: 0;
+  }
+
+  .date {
+    color: $grey;
+    font-weight: 300;
+  }
+
+  .post-content {
+    padding: 25px 0;
+  }
+
+  .author-description {
+    padding-top: 10px;
+
+    p {
+      margin: 0;
+    }
+  }
+}

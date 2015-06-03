@@ -9,6 +9,6 @@ With closeheat, we provide that quick iteration cycle and high-converting design
 
 Me and my team will be sharing our experiences in creating our little hacks and campaigns every week.
 
-The hack nobody knows about - "Growth Hacking in Slack communities" next week! You can subscribe below.
+The hack nobody knows about - "Growth Hacking in Slack communities" next week!
 
-Or do a Google Hangout with me and lets talk about newest tricks growth hacking or business development. Email me at domas@closeheat.com and we'll schedule it.
+Lets do a Google Hangout with me and talk about newest tricks while growth hacking or developing business. Email me at domas@closeheat.com and we'll schedule it.

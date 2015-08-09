@@ -8,6 +8,10 @@ $ ->
   initAnalytics()
   bindSendMessage()
   initReferrer()
+  makeBlogLinksTargetBlank()
+
+makeBlogLinksTargetBlank = ->
+  $('.blog a').prop('target', '_blank')
 
 initReferrer = ->
   return if cookies.get('ch_initial_referrer')

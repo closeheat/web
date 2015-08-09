@@ -1,0 +1,109 @@
+extends ../index
+
+block post-date
+  | 2015-09-09
+block post-title
+  | Two Rad Upcoming Features to Push the Envelope
+
+block post-author
+  .col.s5.m2
+    img.responsive-img.circle(src='/img/team/domas.jpg', alt='Domas Bitvinskas')
+  .col.s7.m9.author-description
+    p
+      b Domas Bitvinskas
+    p CEO & Co-Founder of closeheat
+
+block post-content
+  :md
+    It's been two months since we released the HTML editing capabilities in
+    browser. I believe that we're onto something huge.
+
+    Me and my comrade [@jpalumickas](http://twitter.com/jpalumickas) had to push what's available in your
+    browser to the limit just to make
+    what we have right now. Things that are coming are going to push it
+    way further - I believe its beyond where anybody has been.
+
+    For the last few months we've listened to all of you guys. We're still
+    small, only got a few awesome guys hosting their awesome projects with us
+    (thanks [Tony](https://twitter.com/Cephalization/status/626173187898888194)!).
+
+    Nonetheless, all of the few hundred amazing people already shaped our
+    company - we hear you.
+
+    ### "Yes" to Human Friendliness
+
+    *Everybody - designers, coders, marketers, regular human beings can work
+    together. They really can - they are only lacking the tools to connect.*
+
+    I believe there will be a platform for them to connect eventually. Sadly,
+    closeheat fills only the coder side. Somebody who has coding
+    chops can really host his websites [here](http://app.closeheat.com/users/sign_up)
+    without any headaches.
+
+    To make it accessible for other mortals, we're working on two rad things.
+
+    ## I. Click and Drag Editor
+    ![Click and Drag Editor show-off](/blog/two-rad-upcoming-features-to-push-the-envelope/click-drag-editor.gif)
+
+    *You just click on things and change them.*
+
+    The magic is that it all translates back to the source code.
+    Edit a bit of your website with click & drag, go back to the code - edit
+    a bit there. Its all seamless.
+
+    We drew on [Nick Santos from Medium](https://medium.com/medium-eng/why-contenteditable-is-terrible-122d8a40e480)
+    axioms for a great web editor. The start is in small calculated steps.
+    Over the next month we're unveiling the first version of the click & drag
+    mode.
+
+    > A good WYSIWYG editor of arbitrary HTML is just as impossible as the halting problem is impossible.
+    - [Nick Santos](https://twitter.com/nicksantos)
+
+    The fancy part is that all the edits that goes back to the code editor and
+    back to Jade or HTML. Both the regular humans and coders are happy. *World peace
+    is restored.*
+
+    ## II. Edit CSS, Javascript, Everything in Browser
+
+    A lot of you guys wondered - "How to change the style of my webpage in closeheat?".
+    We had an unsatisfying answer - there's no way. We scraped the existing
+    web editor in a "betaish" fashion - to check if anybody feels as much
+    love for it as we do.
+
+    Designers hate terminal, git and editors in general. They are limiting, slow and
+    with a steep learning curve. To be honest, we hate it too and we are finding a way.
+
+    At the moment of writing, [@jpalumickas](http://twitter.com/jpalumickas) is
+    chopping his way into this territory. It's cool that we can edit this index.jade
+    at the moment, but he'll let us drill into CSS and even Javascript in our
+    browsers. It will make it possible to create a complex website without even downloading
+    the files to your computer. How rad is that?
+
+    ### Work together
+
+    I am super thankful to anybody who tried out building a website with closeheat.
+    All of us already learned huge lessons and will continue to stay sharp.
+    Its our mission to help you build great experiences, work together and more
+    importantly - having fun while doing it. Let's accept our differences and
+    find a way to work together.
+
+  .subscribe-email
+    h5 Be the first one to try those rad features when we release them!
+    // Begin MailChimp Signup Form
+    #mc_embed_signup
+      form#mc-embedded-subscribe-form.validate(action='//domasbitvinskas.us10.list-manage.com/subscribe/post?u=f84937ea3dcb3a0e8caee05e2&id=8dcef53d5a', method='post', name='mc-embedded-subscribe-form', target='_blank', novalidate='')
+        #mc_embed_signup_scroll.row
+          .mc-field-group.col.m5
+            input#mce-EMAIL.required.email(type='email', value='', name='EMAIL', placeholder='Your Best Email')
+          .mc-field-group.col.m5
+            input#mce-FNAME(type='text', value='', name='FNAME', placeholder='Your Name')
+          #mce-responses.clear
+            #mce-error-response.response(style='display:none')
+            #mce-success-response.response(style='display:none')
+          // real people should not fill this in and expect good things - do not remove this or risk form bot signups
+          div(style='position: absolute; left: -5000px;')
+            input(type='text', name='b_f84937ea3dcb3a0e8caee05e2_8dcef53d5a', tabindex='-1', value='')
+          .clear.col.m2
+            input.subscribe-email-button#mc-embedded-subscribe(type='submit', value='Let me know!', name='subscribe')
+
+  script(type='text/javascript', src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js')

@@ -29,4 +29,27 @@
       margin: 0;
     }
   }
+
+  .posts-list {
+    a {
+      color: $black;
+
+      &:hover {
+        color: $grey;
+      }
+    }
+
+    h3 {
+      margin-bottom: 5px;
+    }
+
+    .date {
+      -webkit-margin-before: 0;
+    }
+
+    li {
+      padding: 10px 0;
+      border-bottom: 1px solid hsla(0, 0%, 91%, .5);
+    }
+  }
 }

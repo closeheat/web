@@ -6,19 +6,24 @@ block content
       .container
           .row.center-align
             .col.m12.s12
-              h1 We write things
+              h1
+                block post-title
+                  | We write things
     .container
       .row
         .col.offset-m2.m8
-          h2.center-align One Thing Successful Companies Do
-          h6.date.center-align 2015-06-03
           .post-content
-            include:md blogposts/one-thing.md
+            block post-content
+              - var posts = []
+              - posts.push({ title: 'One Thing Successful Companies Do', slug: 'one-thing-successful-companies-do', date: '2015-06-03' })
 
+              ul.posts-list
+                each post in posts
+                  a(href="/blog/#{post.slug}")
+                    li
+                      h3 #{post.title}
+                      p.date #{post.date}
+          h6.date.right-align
+            block post-date
           .row
-            .col.s5.m2
-              img.responsive-img.circle(src='/img/team/domas.jpg', alt='Domas Bitvinskas')
-            .col.s7.m9.author-description
-              p
-                b Domas Bitvinskas
-              p CEO & Co-Founder of closeheat
+            block post-author

@@ -11,7 +11,7 @@ $ ->
   makeBlogLinksTargetBlank()
 
 makeBlogLinksTargetBlank = ->
-  $('.blog a').prop('target', '_blank')
+  $('.blog a').not('.blog .posts-list a').prop('target', '_blank')
 
 initReferrer = ->
   return if cookies.get('ch_initial_referrer')

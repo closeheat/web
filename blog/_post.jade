@@ -1,0 +1,19 @@
+extends ../partials/hero-layout
+
+block content
+  .blog(itemscope="" itemtype="http://schema.org/BlogPosting")
+    .hero
+      .container
+          .row.center-align
+            .col.m12.s12
+              h1(itemprop="name headline")
+                block post-title
+    .container
+      .row
+        .col.offset-m2.m8
+          .post-content(itemprop="articleBody")
+            block post-content
+          h6.date.right-align
+            block post-date
+          .row
+            block post-author

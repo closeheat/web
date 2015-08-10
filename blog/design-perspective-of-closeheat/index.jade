@@ -1,0 +1,83 @@
+extends ../index
+
+block post-date
+  | 2015-08-10
+block post-title
+  | Design perspective of closeheat
+
+block meta
+  meta(name='description', content='Two Rad Upcoming closeheat Features')
+  meta(property='og:description' content='Pushing web editors beyond the limit. Click and Drag Editor which syncs all the code back to Jade. Editing CSS, Javascript in your browser. Sounds rad huh?')
+  meta(property='og:image' content='http://closeheat.com/blog/two-rad-upcoming-features-to-push-the-envelope/ogimage.png')
+  meta(property='og:title' content='Two Rad Upcoming closeheat Features')
+
+block post-author
+  .col.s5.m2
+    img.responsive-img.circle(src='/img/team/benas.jpg', alt='Benas Bitvinskas')
+  .col.s7.m9.author-description
+    p
+      b Benas Bitvinskas
+    p CDO & Co-Founder of closeheat
+
+block post-content
+  :md
+    I have dreamed that something special will come. 
+    Now I totally understand what my daydreams were about. 
+    For about half a year we were working on the project and achieved something enormous from my perspective. 
+    We made a simple UI which lets everyone (including every amateur website beginner) to 
+    create almost codeless websites for their needs.
+
+    We studied about a hundred startups who had the most accurate design. 
+    Layout, colour, graphics, fonts, content were our best friends in our journey to launch. 
+    Creating user-friendly web design was our biggest mission. 
+    Making it simple to understand and pixel-perfect took time but that’s where you came to help. 
+    While analysing your experience we are getting better and better each day.
+
+    ## I. Template variety
+    ![Template variety show-off](/blog/design-perspective-of-closeheat/templates.png)
+    Our team believes that everyone is different. We asked ourselves: what is a good template? 
+    What makes user to be become happy when choosing template? 
+    We pondered on those questions, but still haven’t found a solution. 
+    Even we deleted unnecessary code lines and simplified everything to suit your 
+    taste we still believe it’s a lot of work to do.
+    What kind of templates do users want? Dropping a variety of models isn’t enough so we are still experimenting. 
+    Right now I’m working with even more landing pages so it’s still not the end of our collection.
+
+    We allow you to change our templates 100% so it’s even more fun! 
+    Imagine about changing the whole website to the “Hello Kitty“ theme! 
+    Oh wait, maybe not.
+
+    ## II. Beautiful developer experience
+
+    We all understand that developers like to work in a clean workplace. 
+    Our expedition was to make the whole experience intelligible and clear. 
+    It is your turn to give us a feedback about our baby project. 
+    The whole closeheat team is ready to grow it the way you want!
+
+    At the moment, [@nedomas](http://twitter.com/nedomas) and [@jpalumickas](http://twitter.com/jpalumickas) 
+    are working on the editor. I hope they won’t let you down because it’s even more complicated with the whole code now! 
+    Getting the best results is our goal and we aren’t afraid of the raindrops on our Macbook screens.
+    It's been two months since we released the HTML editing capabilities in
+    browser. I believe that we're onto something huge.
+
+  .subscribe-email
+    h5 Be the first one to try those rad features when we release them!
+    // Begin MailChimp Signup Form
+    #mc_embed_signup
+      form#mc-embedded-subscribe-form.validate(action='//domasbitvinskas.us10.list-manage.com/subscribe/post?u=f84937ea3dcb3a0e8caee05e2&id=8dcef53d5a', method='post', name='mc-embedded-subscribe-form', target='_blank', novalidate='')
+        #mc_embed_signup_scroll.row
+          .mc-field-group.col.l4
+            input#mce-EMAIL.required.email(type='email', value='', name='EMAIL', placeholder='Your Best Email')
+          .mc-field-group.col.l4
+            input#mce-FNAME(type='text', value='', name='FNAME', placeholder='Your Name')
+          // real people should not fill this in and expect good things - do not remove this or risk form bot signups
+          div(style='position: absolute; left: -5000px;')
+            input(type='text', name='b_f84937ea3dcb3a0e8caee05e2_8dcef53d5a', tabindex='-1', value='')
+          .clear.col.l4
+            input.subscribe-email-button#mc-embedded-subscribe(type='submit', value='Let me know', name='subscribe')
+        .row
+          #mce-responses.clear
+            #mce-error-response.response(style='display:none')
+            #mce-success-response.response(style='display:none')
+
+  script(type='text/javascript', src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js')

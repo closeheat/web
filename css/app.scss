@@ -103,6 +103,17 @@ nav {
     padding: 50px 0 0;
     margin-bottom: -7px;
   }
+  
+  .sign-up-btn {
+    width: 100%;
+    margin-bottom: -5px;
+  }
+  
+  a.github-note {
+    font-size: 10px;
+    color: $white;
+    text-shadow: 0 1px color('blue-grey', 'darken-4');
+  }
 
   .users {
     background-color: color('grey', 'lighten-4');

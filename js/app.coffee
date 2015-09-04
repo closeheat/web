@@ -19,13 +19,16 @@ initReferrer = ->
   cookies.set('ch_initial_referrer', document.referrer, domain: '.closeheat.com')
 
 initAnalytics = ->
-  track('#headerwrap .cta a', 'Top hero CTA')
-  track('.nav a', 'Navbar')
-  track('.nav a.btn-primary', 'Navbar CTA')
-  track('.carousel-indicators li', 'Carousel')
-  track('#pricing .cta', 'Bottom CTA')
-  track('#drop-a-line', 'Drop a line')
-  track('#send-message', 'Send message')
+  track('.top-hero-cta', 'Hero CTA')
+  track('.screenshot', 'Screenshot CTA')
+  track('nav .blog', 'Blog')
+  track('nav .docs', 'Docs')
+  track('nav .team', 'Team')
+  track('nav .pricing', 'Pricing')
+  track('nav .sign-up', 'Navbar CTA')
+  track('.pricing-cta-free', 'Pricing Free CTA')
+  track('.pricing-cta-recommended', 'Pricing Recommended CTA')
+  track('.pricing-cta-team', 'Pricing Team CTA')
 
 track = (selector, msg) ->
   $(selector).on 'click', (e) ->
@@ -44,9 +47,9 @@ bindSendMessage = ->
         message: $('#your-message').val()
       dataType: 'json'
     ).then (err, resp) ->
-      $('#drop-a-line').addClass('hidden')
+      $('#drop-a-line').addClass('hide')
 
       if resp == 'success'
-        $('#thanks-note').removeClass('hidden')
+        $('#thanks-note').removeClass('hide')
       else
-        $('#error-note').removeClass('hidden')
+        $('#error-note').removeClass('hide')

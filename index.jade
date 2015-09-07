@@ -63,8 +63,10 @@ block content
           .price
             .name Basic
             .total
-              span.free(data-plan-price='basic') FREE
-            .subtotal FOREVER
+              span $
+              em(data-plan-price='pro') 0
+              small /mo
+            .subtotal FREE FOREVER
           .property 1 website
           .options
             ul.list-group
@@ -84,7 +86,7 @@ block content
             .name Professional
             .total
               span $
-              em(data-plan-price='pro') 20
+              em(data-plan-price='pro') 19
               small /mo
             .subtotal Free 14 days trial period
           .property 3 Websites
@@ -106,7 +108,7 @@ block content
             .name Team
             .total
               span $
-              em(data-plan-price='multi') 100
+              em(data-plan-price='multi') 99
               small /mo
             .subtotal Free 14 days trial period
           .property Unlimited Websites

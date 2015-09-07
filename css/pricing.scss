@@ -10,8 +10,14 @@
     padding: 75px 0 0
 }
 
-.pricetable .table .price .total .free {
-  color: #fff;
+.pricetable .table .price .total {
+  em {
+    font-style: normal;
+  }
+  
+  .free {
+    color: #fff;
+  }
 }
 
 .pricetable h1, .pricetable h3 {

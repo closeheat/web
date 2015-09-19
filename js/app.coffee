@@ -15,15 +15,15 @@ personalizeCta = ->
   sign_up_btn = $('.sign-up-btn')
   return unless sign_up_btn.length
 
-  new_btn = null
-
-  if document.referrer.match(/materialize/)
-    new_btn =
+  new_btn = switch
+    when document.referrer.match(/materialize/)
       text: 'Create free website with Materialize'
       href: 'http://app.closeheat.com/apps/template?github=closeheat/template-materializecss'
+    when document.referrer.match(/react/)
+      text: 'Create free website with React'
+      href: 'http://app.closeheat.com/apps/template?github=closeheat/template-reactjs'
 
   return unless new_btn
-
   sign_up_btn.html(new_btn.text).prop('href', new_btn.href)
 
 makeBlogLinksTargetBlank = ->

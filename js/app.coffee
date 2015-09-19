@@ -3,12 +3,28 @@ cookies = require 'browser-cookies'
 require 'bootstrap'
 
 $ ->
+  personalizeCta()
   $('.btn').addClass('waves-effect waves-light')
   window.smoothScroll.init()
   initAnalytics()
   bindSendMessage()
   initReferrer()
   makeBlogLinksTargetBlank()
+
+personalizeCta = ->
+  sign_up_btn = $('.sign-up-btn')
+  return unless sign_up_btn.length
+
+  new_btn = null
+
+  if true || document.referrer.match(/materialize/)
+    new_btn =
+      text: 'Create free website with Materialize'
+      href: 'http://app.closeheat.com/apps/template?github=closeheat/template-materializecss'
+
+  return unless new_btn
+
+  sign_up_btn.html(new_btn.text).prop('href', new_btn.href)
 
 makeBlogLinksTargetBlank = ->
   $('.blog a').not('.blog .posts-list a').prop('target', '_blank')

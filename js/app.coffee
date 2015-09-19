@@ -17,7 +17,7 @@ personalizeCta = ->
 
   new_btn = null
 
-  if true || document.referrer.match(/materialize/)
+  if document.referrer.match(/materialize/)
     new_btn =
       text: 'Create free website with Materialize'
       href: 'http://app.closeheat.com/apps/template?github=closeheat/template-materializecss'

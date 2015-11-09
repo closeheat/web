@@ -18,10 +18,10 @@ personalizeCta = ->
   new_btn = switch
     when personalizationMatch('materialize')
       text: 'Create free website with Materialize'
-      href: 'http://app.closeheat.com/apps/template?github=closeheat/template-materializecss'
+      href: 'http://app.closeheat.com/apps/template?closeheat_demo&github_repo=closeheat/template-materializecss'
     when personalizationMatch('react')
       text: 'Create free website with React'
-      href: 'http://app.closeheat.com/apps/template?github=closeheat/template-reactjs'
+      href: 'http://app.closeheat.com/apps/template?closeheat_demo&github_repo=closeheat/template-reactjs'
 
   return unless new_btn
   sign_up_btn.html(new_btn.text).prop('href', new_btn.href)

@@ -23,7 +23,7 @@
 }
 
 .btn,
-&.btn:hover {
+.btn:hover {
   @include box-shadow(none);
 }
 

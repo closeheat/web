@@ -3,7 +3,7 @@ cookies = require 'browser-cookies'
 require 'bootstrap'
 
 $ ->
-  personalizeCta()
+  # personalizeCta()
   $('.btn').addClass('waves-effect waves-light')
   window.smoothScroll.init()
   initAnalytics()

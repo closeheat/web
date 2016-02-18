@@ -1,34 +1,18 @@
 extends partials/hero-layout
 
 block content
-  .hero
-    .container
-      .row.center-align
-        .col.m12
-          h1 Developers shouldn’t be doing those medial tasks
-          h3 Let your marketing folks do it themselves
-      .row.center-align
-        .col.m6.offset-m3.s10.offset-s1.top-hero-cta
-          a.btn.btn-large.waves-effect.waves-light.sign-up-btn(href='http://app.closeheat.com/auth/github') Create Free Website Now
-          a.github-note(href='http://app.closeheat.com/auth/github') with GitHub integration
+  .hero.hero-landing
+    .row.center-align
+      .col.m12
+        h1 Visual editing layer for your regular website
+        h3 Don't do those medial tasks - let your marketing folks do it themselves
+    .row.center-align
+      .col.m6.offset-m3.s10.offset-s1.top-hero-cta
+        a.btn.btn-large.waves-effect.waves-light.sign-up-btn(href='http://app.closeheat.com/auth/github') Get It Free Now
     .row.screenshot
       .col.offset-m2.m8.s12
         a(href='http://app.closeheat.com/auth/github')
-          img.responsive-img(src='https://s3.amazonaws.com/f.cl.ly/items/3B3N0l1U1X1Y0S0J1841/new-hero.png', alt='Sign Up Now')
-    .row.users.center-align
-      .container
-        .row
-          div.col.m12.s12.integrates-with Easy integration with
-        .row.center-align
-          div.col.m3.s6
-            img(src='/img/integrations/segment.png', alt='Segment')
-          div.col.m3.s6
-            img(src='/img/integrations/github.png', alt='GitHub')
-          div.col.m3.s6
-            img(src='/img/integrations/optimizely.jpg', alt='Optimizely')
-          div.col.m3.s6
-            img(src='/img/integrations/ga.png', alt='Google Analytics')
-            
+          img.hero-img.responsive-img(src='https://s3.amazonaws.com/f.cl.ly/items/3B3N0l1U1X1Y0S0J1841/new-hero.png', alt='Sign Up Now')
   .testimonials
     .container
       .row
@@ -37,15 +21,15 @@ block content
             p(lang='en', dir='ltr')
             a(href='https://twitter.com/closeheatapp') @closeheatapp
             |  AWSOME APP! So glad I wondered across you site today. Great user on boarding experience. You guys are rocking it.
-            | — Aaron Myhre (@Aaron_Myhre) 
+            | — Aaron Myhre (@Aaron_Myhre)
             a(href='https://twitter.com/Aaron_Myhre/status/645528684712095744') September 20, 2015
           script(async='', src='//platform.twitter.com/widgets.js', charset='utf-8')
         div.col.l6
           blockquote.twitter-tweet(lang='en')
             p(lang='en', dir='ltr')
-            | Thank you so much to early supporters! closeheat and Alex! We now have a responsive, optimized, and… 
+            | Thank you so much to early supporters! closeheat and Alex! We now have a responsive, optimized, and…
             a(href='https://t.co/LP0IOHWENe') https://t.co/LP0IOHWENe
-            | — Tony Powell (@Cephalization) 
+            | — Tony Powell (@Cephalization)
             a(href='https://twitter.com/Cephalization/status/626173187898888194') July 28, 2015
           script(async='', src='//platform.twitter.com/widgets.js', charset='utf-8')
   .features

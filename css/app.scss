@@ -16,6 +16,10 @@
 @import 'team';
 @import 'blog';
 
+.container-wide {
+  padding: 0 2em;
+}
+
 .no-valign-wrapper-on-mobile {
   @media #{$small-and-down} {
     display: block;
@@ -28,7 +32,7 @@
 }
 
 body {
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Roboto', sans-serif;
   -webkit-font-smoothing: antialiased;
   -webkit-overflow-scrolling: touch;
   color: $black;
@@ -38,12 +42,12 @@ h1 {
   font-size: 35px;
   line-height: 36px;
   margin: 0;
-  font-weight: 600;
+  font-weight: 400;
 }
 
 h3 {
   margin-top: 0;
-  font-size: 24px;
+  font-size: 16px;
 }
 
 nav {
@@ -83,6 +87,13 @@ nav {
     .sign-up {
       margin-left: 15px;
       padding: 0 15px;
+      background-color: $no-color;
+      border: 1px solid $secondary-color;
+      color: $secondary-color;
+
+      &:hover {
+        color: white;
+      }
     }
   }
 }
@@ -99,16 +110,30 @@ nav {
   background-repeat: no-repeat;
   width:100%;
 
+  &.hero-landing {
+    background-color: HSLA(216, 38%, 18%, 1);
+    background-image: inherit;
+    min-height: 110vh;
+  }
+
   .screenshot {
-    padding: 50px 0 0;
-    margin-bottom: -7px;
+    padding: 10px 0 0;
+    margin-bottom: -50px;
   }
-  
+
+  .hero-img {
+    margin-bottom: -6px;
+  }
+
   .sign-up-btn {
+    margin-top: 10px;
     width: 100%;
-    margin-bottom: -5px;
+    max-width: 220px;
+    border-radius: 100px;
+    background-color: $secondary-color;
+    // background-color: HSLA(2, 86%, 58%, 1);
   }
-  
+
   a.github-note {
     font-size: 10px;
     color: $white;

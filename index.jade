@@ -1,55 +1,89 @@
 extends partials/hero-layout
 
 block content
-  .hero.hero-landing
-    .row.center-align
-      .col.m12
-        h1 Visual editing layer for your regular website
-        h3 Don't do those medial tasks - let your marketing folks do it themselves
-    .row.center-align
-      .col.m6.offset-m3.s10.offset-s1.top-hero-cta
-        a.btn.btn-large.waves-effect.waves-light.sign-up-btn(href='http://app.closeheat.com/auth/github') Get It Free Now
-    .row.screenshot
-      .col.offset-m2.m8.s12
+  .hero.hero-landing.container-wide
+    .row.valign-wrapper.no-valign-wrapper-on-mobile
+      .col.s12.m6.description.valign
+        h1 Visual editing layer for your regular website.
+        h2
+          | Stop struggling with Wordpress themes.
+          |  Create a simple HTML website without thinking about content editing.
+          |  Have content editing layer for free <b>without spending a minute</b>.
+
+        a.btn.btn-large.waves-effect.waves-light.sign-up-btn(href='http://app.closeheat.com/auth/github') Start innovating
+      .col.s12.m6.no-right-padding.valign.hero-img-col
         a(href='http://app.closeheat.com/auth/github')
           img.hero-img.responsive-img(src='https://s3.amazonaws.com/f.cl.ly/items/3B3N0l1U1X1Y0S0J1841/new-hero.png', alt='Sign Up Now')
-  .signup-modal
-    .signup-modal-background
-    .signup-modal-content
-      .signup-modal-title
-        | Get It Free
-      .signup-modal-description
-        | We store <b>your website code</b>
-        | <br>in <b>your Github account</b>.
-      a.signup-modal-button(href='#')
-        | Sign Up With GitHub
-      .signup-modal-quick-terms
-        .signup-modal-quick-terms-title
-          | You reserve all the rights to your code.
-        .signup-modal-quick-term
-          | We care about your security and privacy.
-        a.signup-modal-terms(href='#')
-          | Terms of Service
+  // .signup-modal
+  //   .signup-modal-background
+  //   .signup-modal-content
+  //     .signup-modal-title
+  //       | Get It Free
+  //     .signup-modal-description
+  //       | We store <b>your website code</b>
+  //       | <br>in <b>your Github account</b>.
+  //     a.signup-modal-button(href='#')
+  //       | Sign Up With GitHub
+  //     .signup-modal-quick-terms
+  //       .signup-modal-quick-terms-title
+  //         | You reserve all the rights to your code.
+  //       .signup-modal-quick-term
+  //         | We care about your security and privacy.
+  //       a.signup-modal-terms(href='#')
+  //         | Terms of Service
 
-  .testimonials
-    .container
-      .row
-        .col.l6
-          blockquote.twitter-tweet(lang='en')
-            p(lang='en', dir='ltr')
-            a(href='https://twitter.com/closeheatapp') @closeheatapp
-            |  AWSOME APP! So glad I wondered across you site today. Great user on boarding experience. You guys are rocking it.
-            | — Aaron Myhre (@Aaron_Myhre)
-            a(href='https://twitter.com/Aaron_Myhre/status/645528684712095744') September 20, 2015
-          script(async='', src='//platform.twitter.com/widgets.js', charset='utf-8')
-        div.col.l6
-          blockquote.twitter-tweet(lang='en')
-            p(lang='en', dir='ltr')
-            | Thank you so much to early supporters! closeheat and Alex! We now have a responsive, optimized, and…
-            a(href='https://t.co/LP0IOHWENe') https://t.co/LP0IOHWENe
-            | — Tony Powell (@Cephalization)
-            a(href='https://twitter.com/Cephalization/status/626173187898888194') July 28, 2015
-          script(async='', src='//platform.twitter.com/widgets.js', charset='utf-8')
+  .testimonials.container-wide
+    .row
+      .col.l6.testimionals-testimional
+        .col.l3
+          img.testimionals-avatar(src='/img/testimionals/aaron.png')
+        .col.l9
+          .testimionals-content
+            | Awesome app! So glad I wondered across your site today.
+            |  Great user onboarding experience.
+          .testimionals-author
+            | Aaron Myhre, Digital Nomad
+      .col.l6.testimionals-testimional
+        .col.l3
+          img.testimionals-avatar(src='/img/testimionals/tony.png')
+        .col.l9
+          .testimionals-content
+            | We now have a responsive, optimized, and beautiful website built on bootstrap, HTML, and CSS.
+          .testimionals-author
+            | Tony Powell, Young Tech Enthusiast
+
+  .how.container-wide
+    .how-question
+      | How does closeheat work?
+    .how-start-icon
+      i.material-icons aspect_ratio
+
+    .how-step.row
+      .how-step-left.col.l6.valign-wrapper
+        .how-step-content
+          .how-step-left-icon
+            i.material-icons polymer
+          h3.how-step-title
+            | Create your message
+          .how-step-description
+            | Create beautiful emails in just a few clicks with our easy-to-use editor. You can choose a template and edit it with drag & drop modules, images, call-to-actions, texts, spacers, etc.
+          a.how-step-cta(href='#')
+            | Start with a template
+      .how-step-right.col.offset-l1.l5.no-right-padding.valign
+        img.responsive-img(src='img/showcase/editor.gif', alt='Editor')
+
+    .how-step.row
+      .how-step-left.col.l6.valign-wrapper
+        .how-step-content
+          .how-step-left-icon
+            i.material-icons polymer
+          h3.how-step-title
+            | Create your message
+          .how-step-description
+            | Create beautiful emails in just a few clicks with our easy-to-use editor. You can choose a template and edit it with drag & drop modules, images, call-to-actions, texts, spacers, etc.
+      .how-step-right.col.offset-l1.l5.no-right-padding.valign
+        img.responsive-img(src='img/showcase/editor.gif', alt='Editor')
+
   .features
     .feature.row.valign-wrapper.no-valign-wrapper-on-mobile
       .col.s12.m5.description.valign

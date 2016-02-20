@@ -16,6 +16,9 @@
 @import 'team';
 @import 'blog';
 
+$blue: HSLA(205, 62%, 44%, 1);
+$purple: #F62D51;
+
 .container-wide {
   padding: 0 2em;
 }
@@ -125,15 +128,24 @@ body {
 }
 
 h1 {
-  font-size: 35px;
-  line-height: 36px;
+  font-size: 40px;
+  line-height: 40px;
   margin: 0;
-  font-weight: 400;
+  font-weight: 300;
+  max-width: 400px;
+  padding-bottom: 40px;
 }
 
-h3 {
+h2 {
   margin-top: 0;
-  font-size: 16px;
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 300;
+  max-width: 500px;
+
+  b {
+    font-weight: 400;
+  }
 }
 
 nav {
@@ -146,16 +158,22 @@ nav {
   padding: 30px 0 0;
   height: 50px;
 
-  .logo img {
-    margin-top: 20px;
-    height: 30px;
+  .logo {
+    svg {
+      margin-top: 20px;
+      height: 30px;
+      width: 120px;
+      fill: white;
+    }
   }
 
   ul li {
     text-transform: uppercase;
 
     a {
-      font-size: 13px;
+      font-size: 11px;
+      letter-spacing: .5px;
+      font-weight: 500;
 
       &:not(.btn) {
         @include transition(color .3s);
@@ -170,13 +188,17 @@ nav {
       background-color: $no-color;
     }
 
-    .sign-up {
+    .nav-sign-up {
       z-index: 0;
       margin-left: 15px;
       padding: 0 15px;
-      background-color: $no-color;
-      border: 1px solid $secondary-color;
-      color: $secondary-color;
+      line-height: 33px;
+      letter-spacing: .5px;
+      font-weight: 500;
+      background-color: white;
+      border: 2px solid white;
+      color: $purple;
+      border-radius: 90px;
 
       &:hover {
         color: white;
@@ -190,8 +212,10 @@ nav {
   width: 100%;
   max-width: 220px;
   border-radius: 100px;
-  background-color: $secondary-color;
+  background-color: $purple;
   z-index: 0;
+  letter-spacing: .5px;
+  font-weight: 500;
   // background-color: HSLA(2, 86%, 58%, 1);
 }
 
@@ -208,8 +232,9 @@ nav {
   width:100%;
 
   &.hero-landing {
-    background-color: HSLA(216, 38%, 18%, 1);
-    background-image: inherit;
+    // background-color: HSLA(216, 38%, 18%, 1);
+    background: linear-gradient(50deg, $blue, $purple);
+    // background-image: inherit;
     min-height: 110vh;
   }
 
@@ -218,8 +243,11 @@ nav {
     margin-bottom: -50px;
   }
 
+  .hero-img-col {
+    padding: 0;
+  }
+
   .hero-img {
-    margin-bottom: -6px;
   }
 
   a.github-note {
@@ -276,4 +304,120 @@ footer {
     padding-right: 0;
   }
 
+}
+
+$black: #1A1E2C;
+$grey: #A1A7AF;
+.testimonials {
+  margin-top: -20px;
+  background-color: #F9F9FA;
+  color: $grey;
+  font-weight: 400;
+
+  .testimionals-avatar {
+    border-radius: 1000px;
+    height: 100px;
+  }
+
+  .testimionals-author {
+    font-size: 11px;
+    letter-spacing: .5px;
+    font-weight: 500;
+    text-transform: uppercase;
+    padding-top: 3px;
+  }
+
+  .testimionals-content {
+    padding-top: 20px;
+    max-width: 400px;
+
+    &:before, &:after {
+      content: '“';
+      font-size: 20px;
+      line-height: 16px;
+    }
+
+    &:after {
+      content: '”';
+    }
+  }
+
+  .testimionals-testimional {
+    padding: 30px 0;
+  }
+}
+
+$dark-grey: hsla(214, 8%, 46%, 1);
+.how {
+  padding-top: 80px;
+  color: $dark-grey;
+
+  .how-step {
+    margin-bottom: 0;
+  }
+
+  .how-question {
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 500;
+  }
+
+  .how-start-icon {
+    padding: 20px 0 20px;
+    color: $purple;
+    text-align: center;
+
+    i {
+      font-size: 40px;
+    }
+  }
+
+  .how-step-left {
+    border-right: 3px dashed #D1F0F0;
+    min-height: 400px;
+
+    .how-step-left-icon i {
+      font-size: 50px;
+      color: $purple;
+    }
+
+    &:after {
+      display: block;
+      content: "";
+      height: 50px;
+      width: 50px;
+      border-radius: 1000px;
+      background-color: hsla(180, 51%, 88%, 0.95);
+      position: relative;
+      left: 29.5%;
+    }
+  }
+
+  .how-step-cta {
+    display: inline-block;
+    margin-top: 25px;
+    font-size: 12px;
+    padding: 3px 15px;
+    line-height: 33px;
+    letter-spacing: .5px;
+    font-weight: 500;
+    border: 2px solid $purple;
+    color: $purple;
+    border-radius: 90px;
+    text-transform: uppercase;
+  }
+
+  .how-step-right {
+    padding-top: 80px;
+  }
+
+  .how-step-title {
+    color: $purple;
+    font-size: 35px;
+    margin-top: 0;
+  }
+
+  .how-step-description {
+    max-width: 400px;
+  }
 }

@@ -1,42 +1,34 @@
 footer
-  .container
+  .container-wide
     .row
-      .col.m5.l5.s12
-        h3 We're in Stockholm
-        p
-          | <b>The startup city, ain't it?</b>
-          br
-          | Kungsgatan 11, Stockholm
-          br
-          | 03218
-          br
-          | Sweden
+      .col.m6.l6.s12
         .row
           .col.m4.s6
             ul
               li
-                a(href='http://docs.closeheatapp.com' target='_blank') Docs
+                a(href="/#features") Features
               li
-                a(href="/#pricing") Pricing
-              li
-                a(href="/team") Team
+                a(href="/team") Our Team
               li
                 a(href="/blog") Blog
+              li
+                a(href="https://twitter.com/closeheatapp" target='_blank') Twitter
           .col.m4.s6
-            ul
-              li
-                a(href="https://www.facebook.com/closeheatapp") Facebook
-              li
-                a(href="https://plus.google.com/+closeheatapp") Google+
-              li
-                a(href="https://twitter.com/closeheatapp") Twitter
+            .footer-location
+              | Kungsgatan 11, Stockholm
+              br
+              | 03218
+              br
+              | Sweden
         .row
-          .col.s12
+          .col.s12.footer-mixpanel-badge
             a(href="https://mixpanel.com/f/partner" rel="nofollow")
-              img(src="//cdn.mxpnl.com/site_media/images/partner/badge_light.png" alt="Mobile Analytics")
-              
-      .col.m7.l7.s12
-        h3 Drop Us A Line
+              img(src="//cdn.mxpnl.com/site_media/images/partner/badge_blue.png" alt="Mobile Analytics")
+
+      .col.m6.l6.s12
+        .row
+          .col.m12
+            .footer-drop-title Drop us a line
         form#drop-a-line(role='form')
           .row
             .input-field.col.m12.s12
@@ -48,7 +40,9 @@ footer
               textarea#your-message.materialize-textarea(rows='3')
               label(for='your-message') Your message
 
-          button#send-message.btn.btn-large.btn-success SEND
+          .row
+            .col.col.s12
+              button.footer-send#send-message SEND
 
 
         #thanks-note.hide

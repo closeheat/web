@@ -9,10 +9,11 @@
 
   h1 {
     padding-bottom: 40px;
+    max-width: 600px;
   }
 
   h2 {
-    font-size: 30px;
+    font-size: 20px;
     padding: 0;
     margin: 0;
   }
@@ -28,14 +29,22 @@
 
   .post-content {
     padding: 25px 0;
+    font-size: 20px;
+    font-weight: 300;
   }
 
   .author-description {
-    padding-top: 10px;
+    padding-top: 28px;
+  }
 
-    p {
-      margin: 0;
-    }
+  .author-name {
+    font-size: 18px;
+  }
+
+  .author-position {
+    font-size: 13px;
+    text-transform: uppercase;
+    font-weight: 500;
   }
 
   .subscribe-email {

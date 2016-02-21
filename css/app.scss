@@ -509,3 +509,11 @@ $darker-purple: hsla(349, 99%, 7%, 1);
 #lean-overlay {
   background: linear-gradient(50deg, $darker-blue, $darker-purple);
 }
+
+.hero-other {
+  h1 {
+    padding-bottom: 40px;
+    font-weight: 400;
+    letter-spacing: 1px;
+  }
+}

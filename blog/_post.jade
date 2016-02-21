@@ -2,20 +2,18 @@ extends ../partials/hero-layout
 
 block content
   .blog(itemscope="" itemtype="http://schema.org/BlogPosting")
-    .hero
-      .container
-          .row.center-align
-            .col.m12.s12
+    .hero.hero-other
+      .container-wide
+          .row
+            .col.m12
               h1(itemprop="name headline")
                 block post-title
-    .container
+    .container-wide
       .row
-        .col.offset-m2.m8
+        .col.m8
           .post-content(itemprop="articleBody")
             block post-content
           h6.date.right-align
             block post-date
           .row
             block post-author
-
-          include ../partials/disqus

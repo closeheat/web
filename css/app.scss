@@ -175,6 +175,7 @@ nav {
 
         &:hover {
           color: $light-blue;
+          text-decoration: underline;
         }
       }
     }
@@ -224,56 +225,12 @@ nav {
   @media #{$small-and-down} {
     padding-top: 290px;
   }
-  background-image: url('../img/banner.jpg');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+  background: linear-gradient(50deg, $blue, $purple);
   width:100%;
-
-  &.hero-landing {
-    // background-color: HSLA(216, 38%, 18%, 1);
-    background: linear-gradient(50deg, $blue, $purple);
-    // background-image: inherit;
-    // min-height: 110vh;
-  }
-
-  .screenshot {
-    padding: 10px 0 0;
-    margin-bottom: -50px;
-  }
 
   .hero-img-col {
     padding: 0;
     margin-bottom: -6px;
-  }
-
-  .hero-img {
-  }
-
-  a.github-note {
-    font-size: 10px;
-    color: $white;
-    text-shadow: 0 1px color('blue-grey', 'darken-4');
-  }
-
-  .users {
-    background-color: color('grey', 'lighten-4');
-
-    img {
-      max-height: 50px;
-      opacity: .3;
-      filter: grayscale(100%);
-      -webkit-filter: grayscale(100%);
-    }
-
-    .integrates-with {
-      color: $black;
-      text-transform: uppercase;
-      vertical-align: middle;
-      font-weight: 600;
-      font-size: 12px;
-      padding: 10px 0 0;
-    }
   }
 }
 

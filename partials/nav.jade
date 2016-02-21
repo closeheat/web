@@ -7,15 +7,32 @@ nav
       .col.s12.m9
         .right
           ul
-            li.blog
-              a(href='/blog') Blog
-            li.team
+            li
+              a(href='/#features') Features
+            li
               a(href='/team') Our Team
-            li.docs
-              a(href='http://docs.closeheatapp.com' target='_blank') Docs
-            li.pricing
-              a(href='/#pricing') Pricing
             li
-              a(href='http://app.closeheat.com/auth/github') Log In
+              a(href='/blog') Blog
             li
-              a.btn.nav-sign-up(href='http://app.closeheat.com/auth/github') Sign Up free
+              a.modal-trigger(href='https://app.closeheat.com/users/sign_in') Log In
+            li
+              a.modal-trigger.btn.nav-sign-up(href='https://app.closeheat.com/users/sign_in') Sign Up free
+
+.signup-modal.modal
+  .signup-modal-content.modal-content
+    .signup-modal-close
+      i.material-icons shuffle
+    .signup-modal-title
+      | Get Started
+    .signup-modal-description
+      | We store <b>your website code</b>
+      | <br>in <b>your Github account</b>.
+    a.signup-modal-button.btn.btn-large.waves-effect.waves-light.sign-up-btn(href='http://app.closeheat.com/auth/github')
+      | Sign Up With GitHub
+    .signup-modal-quick-terms
+      .signup-modal-quick-terms-title
+        | You reserve all the rights to your code.
+      .signup-modal-quick-term
+        | We care about your security and privacy.
+      a.signup-modal-terms(href='#')
+        | Terms of Service

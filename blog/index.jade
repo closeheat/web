@@ -3,15 +3,15 @@ extends ../partials/hero-layout
 
 block content
   .blog
-    .hero
-      .container
-          .row.center-align
-            .col.m12.s12
-              h1
-                | We write things
-    .container
+    .hero.hero-other
+      .container-wide
+        .row
+          .col.s12
+            h1
+              | We write things
+    .container-wide
       .row
-        .col.offset-m2.m8
+        .col.m6
           .post-content
             - var posts = []
             - posts.push({ title: 'Two Rad Upcoming Features to Push the Envelope', slug: 'two-rad-upcoming-features-to-push-the-envelope', date: '2015-08-09' })
@@ -21,5 +21,5 @@ block content
               each post in posts
                 a(href="/blog/#{post.slug}")
                   li
-                    h3 #{post.title}
+                    h2 #{post.title}
                     p.date #{post.date}

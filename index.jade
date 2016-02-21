@@ -3,7 +3,7 @@ extends partials/hero-layout
 block content
   .hero.hero-landing
     .row.valign-wrapper.no-valign-wrapper-on-mobile
-      .col.s12.m5.valign
+      .col.l5.valign.hero-text
         .container-wide
           h1 Visual editing layer for your regular website.
           h2
@@ -11,27 +11,10 @@ block content
             |  Create a simple HTML website without thinking about content editing.
             |  Have content editing layer for free <b>without spending a minute</b>.
 
-          a.btn.btn-large.waves-effect.waves-light.sign-up-btn(href='http://app.closeheat.com/auth/github') Start innovating
-      .col.s12.m7.no-right-padding.valign.hero-img-col
-        a(href='http://app.closeheat.com/auth/github')
+          a.modal-trigger.btn.btn-large.waves-effect.waves-light.sign-up-btn(href='https://app.closeheat.com/users/sign_in') Start innovating
+      .col.l7.no-right-padding.valign.hero-img-col
+        a(href='https://app.closeheat.com/users/sign_in').modal-trigger
           img.hero-img.responsive-img(src='/img/editor.png', alt='Sign Up Now')
-  // .signup-modal
-  //   .signup-modal-background
-  //   .signup-modal-content
-  //     .signup-modal-title
-  //       | Get It Free
-  //     .signup-modal-description
-  //       | We store <b>your website code</b>
-  //       | <br>in <b>your Github account</b>.
-  //     a.signup-modal-button(href='#')
-  //       | Sign Up With GitHub
-  //     .signup-modal-quick-terms
-  //       .signup-modal-quick-terms-title
-  //         | You reserve all the rights to your code.
-  //       .signup-modal-quick-term
-  //         | We care about your security and privacy.
-  //       a.signup-modal-terms(href='#')
-  //         | Terms of Service
 
   .testimonials.container-wide
     .row
@@ -63,13 +46,13 @@ block content
       .how-step-left.col.l6.valign-wrapper
         .how-step-content
           .how-step-left-icon
-            i.material-icons polymer
+            i.material-icons view_carousel
           h3.how-step-title
             | Choose a Dope Theme
           .how-step-description
-            | Bring your vision to life with the theme that’s right for you. Get your business online, start a blog or open an eCommerce store. It’s easy to get started.
-          a.how-step-cta(href='#')
-            | Start with a theme
+            | It's always to start with something.
+            | We make sure that the themes we provide are <b>fresh, rare, responsive and made with
+            | with incredible quality</b>.
       .how-step-right.col.offset-l1.l5.no-right-padding.valign
         img.responsive-img(src='img/showcase/editor.gif', alt='Editor')
 
@@ -77,35 +60,43 @@ block content
       .how-step-left.col.l6.valign-wrapper
         .how-step-content
           .how-step-left-icon
-            i.material-icons polymer
+            i.material-icons dashboard
           h3.how-step-title
             | Customize with Visual and Code Editors
           .how-step-description
-            | Anyone at any skill level can build a fully-functional website with Weebly. Simply drag and drop images and text and publish when you’re ready. Whether you’re a beginner or professional, the interface is fun to use and there is no coding required.
+            | Different people have different approaches to editing their websites.
+            | Not everybody wants to dig in the code to change a headline or an image.
+            | Not everybody is technical. Embrace that and <b>choose your ways to manage
+            | your website content</b>.
       .how-step-right.col.offset-l1.l5.no-right-padding.valign
         img.responsive-img(src='img/showcase/editor.gif', alt='Editor')
 
     .how-step.row
       .how-step-left.col.l6.valign-wrapper
         .how-step-content
-          .how-step-left-icon
-            i.material-icons polymer
+          .how-step-left-icon.how-step-left-icon-pull-left
+            i.material-icons turned_in
           h3.how-step-title
             | Publish Instantly
           .how-step-description
-            | Anyone at any skill level can build a fully-functional website with Weebly. Simply drag and drop images and text and publish when you’re ready. Whether you’re a beginner or professional, the interface is fun to use and there is no coding required.
+            | <b>Do quick fixes in the browser</b> - iterate quickly.
+            | Everything is backed up by GitHub source control. Marketing folks will not
+            | even know they are writing code through Visual Editor. Anyone at any skill level
+            | can build a fully-functional website. <b>Anyone can collaborate</b>.
       .how-step-right.col.offset-l1.l5.no-right-padding.valign
         img.responsive-img(src='img/showcase/editor.gif', alt='Editor')
 
     .how-icon.how-end-icon
       i.material-icons done
     .how-end-title
-      | It's alive - Promote your new website
+      | It's alive - Time to Promote your new website
     .how-end-cta
-      a.btn.btn-large.waves-effect.waves-light.sign-up-btn(href='http://app.closeheat.com/auth/github') Get Started
+      a.modal-trigger.btn.btn-large.waves-effect.waves-light.sign-up-btn(href='https://app.closeheat.com/users/sign_in') Get Started
 
-  .features
+  #features.features
     .container-wide
+      .features-divider
+        i.material-icons clear_all
       .features-title
         | Features
 
@@ -113,29 +104,72 @@ block content
         .row
           .col.l3
             .feature-icon
-              i.material-icons input
+              i.material-icons subtitles
+            .feature-title
+              | Visual Editing in Browser
+            .feature-description
+              | Create a website without thinking about content editing. Have content editing layer for free without spending a minute.
+          .col.l3
+            .feature-icon
+              i.material-icons subtitles
+            .feature-title
+              | Code Editing in Browser
+            .feature-description
+              | Need to do some bigger design changes? Edit all your CSS, HTML and JavaScript files
+              | in your browser. Have hot reload.
+          .col.l3
+            .feature-icon
+              i.material-icons code
             .feature-title
               | Upload your code
             .feature-description
-              | Popular apps and services to market your website and grow your business with simple, one-click integrations.
-          .col.l3
-            .feature-icon
-              i.material-icons loop
-            .feature-title
-              | Integration with GitHub
-            .feature-description
-              | Popular apps and services to market your website and grow your business with simple, one-click integrations.
+              | Got a website already? We'll provide the visual editing layer then.
+              | Our algorithm supports HTML and Markdown.
           .col.l3
             .feature-icon
               i.material-icons spellcheck
             .feature-title
               | Custom domain support
             .feature-description
-              | Popular apps and services to market your website and grow your business with simple, one-click integrations.
+              | We believe people have the rights to connect their custom domain (whatever.com) without
+              | any extra cost.
           .col.l3
             .feature-icon
-              i.material-icons view_module
+              i.material-icons dns
             .feature-title
               | Hosting
             .feature-description
-              | Popular apps and services to market your website and grow your business with simple, one-click integrations.
+              | You worry about incredible website, we worry about hosting it at blazing speeds.
+              | Leave it to us.
+          .col.l3
+            .feature-icon
+              i.material-icons web
+            .feature-title
+              | Use your own text editor
+            .feature-description
+              | You can use Sublime Text or VIM - as long as you push your changes to GitHub,
+              | we'll publish it.
+          .col.l3
+            .feature-icon
+              i.material-icons loop
+            .feature-title
+              | Integration with GitHub
+            .feature-description
+              | We sync all your changes to GitHub and publish all your GitHub changes to your
+              | website. Continuous deployment.
+          .col.l3
+            .feature-icon
+              i.material-icons subtitles
+            .feature-title
+              | Command line tools
+            .feature-description
+              | Publish, check logs, clone websites - it's like Heroku toolbelt for your simple
+              | websites.
+  .container-wide.last-chance
+    .last-chance-title
+      div
+        | You build an incredible website.
+      div
+        | We help you manage the content.
+
+    a.modal-trigger.btn.btn-large.waves-effect.waves-light.sign-up-btn(href='https://app.closeheat.com/users/sign_in') Get Started

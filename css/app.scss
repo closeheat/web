@@ -222,6 +222,10 @@ nav {
 }
 
 .hero {
+  .hero-text {
+    padding-bottom: 50px;
+  }
+
   color: $white;
   padding-top: 190px;
   @media #{$small-and-down} {
@@ -489,6 +493,10 @@ $dark-grey: hsla(214, 8%, 46%, 1);
 
   .how-step-description {
     max-width: 450px;
+
+    b {
+      font-weight: 500;
+    }
   }
 }
 
@@ -510,17 +518,13 @@ $dark-grey: hsla(214, 8%, 46%, 1);
     border: 3px solid $purple;
     border-radius: 1000px;
     text-align: center;
-    margin: 0 auto;
+    margin: 70px auto 0;
 
     i {
       color: $purple;
       font-size: 50px;
       line-height: 96px;
     }
-  }
-
-  .features-container {
-    padding-top: 100px;
   }
 
   .feature-title {

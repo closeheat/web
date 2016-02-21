@@ -286,6 +286,11 @@ footer {
     border-radius: 90px;
     text-transform: uppercase;
     background-color: $no-color;
+
+    &:hover {
+      background-color: $purple;
+      color: white;
+    }
   }
 }
 
@@ -401,6 +406,10 @@ $grey: #A1A7AF;
     .how-step-left-icon i {
       font-size: 50px;
       color: $purple;
+    }
+
+    .how-step-left-icon-pull-left {
+      margin-left: -8px;
     }
 
     &:after {

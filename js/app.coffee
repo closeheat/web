@@ -69,12 +69,12 @@ bindSendMessage = ->
     e.preventDefault()
 
     $.ajax(
-      url: '//formspree.io/domas.bitvinskas@me.com'
+      url: 'https://formspree.io/domas.bitvinskas@me.com'
       method: 'POST'
+      dataType: 'json'
       data:
         email: $('#your-email').val()
         message: $('#your-message').val()
-      dataType: 'json'
     ).then (err, resp) ->
       $('#drop-a-line').addClass('hide')
 

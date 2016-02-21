@@ -17,6 +17,8 @@ bindModals = ->
     e.preventDefault()
     $('.modal').openModal(opacity: .8)
 
+    analytics.track 'Signup modal open', {}
+
   $(document).on 'click', '.signup-modal-close', (e) ->
     e.preventDefault()
     $('.modal').closeModal()
@@ -48,16 +50,16 @@ initReferrer = ->
   cookies.set('ch_initial_referrer', document.referrer, domain: '.closeheat.com')
 
 initAnalytics = ->
-  track('.top-hero-cta', 'Hero CTA')
-  track('.screenshot', 'Screenshot CTA')
-  track('nav .blog', 'Blog')
-  track('nav .docs', 'Docs')
-  track('nav .team', 'Team')
-  track('nav .pricing', 'Pricing')
-  track('nav .sign-up', 'Navbar CTA')
-  track('.pricing-cta-free', 'Pricing Free CTA')
-  track('.pricing-cta-recommended', 'Pricing Recommended CTA')
-  track('.pricing-cta-team', 'Pricing Team CTA')
+  # track('.top-hero-cta', 'Hero CTA')
+  # track('.screenshot', 'Screenshot CTA')
+  # track('nav .blog', 'Blog')
+  # track('nav .docs', 'Docs')
+  # track('nav .team', 'Team')
+  # track('nav .pricing', 'Pricing')
+  # track('nav .sign-up', 'Navbar CTA')
+  # track('.pricing-cta-free', 'Pricing Free CTA')
+  # track('.pricing-cta-recommended', 'Pricing Recommended CTA')
+  # track('.pricing-cta-team', 'Pricing Team CTA')
 
 track = (selector, msg) ->
   $(selector).on 'click', (e) ->

@@ -11,27 +11,29 @@ block content
             |  Create a simple HTML website without thinking about content editing.
             |  Have content editing layer for free <b>without spending a minute</b>.
 
-          a.btn.btn-large.waves-effect.waves-light.sign-up-btn(href='http://app.closeheat.com/auth/github') Start innovating
+          a.modal-trigger.btn.btn-large.waves-effect.waves-light.sign-up-btn(href='http://app.closeheat.com/auth/github') Start innovating
       .col.l7.no-right-padding.valign.hero-img-col
-        a(href='http://app.closeheat.com/auth/github')
+        a(href='http://app.closeheat.com/auth/github').modal-trigger
           img.hero-img.responsive-img(src='/img/editor.png', alt='Sign Up Now')
-  // .signup-modal
-  //   .signup-modal-background
-  //   .signup-modal-content
-  //     .signup-modal-title
-  //       | Get It Free
-  //     .signup-modal-description
-  //       | We store <b>your website code</b>
-  //       | <br>in <b>your Github account</b>.
-  //     a.signup-modal-button(href='#')
-  //       | Sign Up With GitHub
-  //     .signup-modal-quick-terms
-  //       .signup-modal-quick-terms-title
-  //         | You reserve all the rights to your code.
-  //       .signup-modal-quick-term
-  //         | We care about your security and privacy.
-  //       a.signup-modal-terms(href='#')
-  //         | Terms of Service
+
+  .signup-modal.modal
+    .signup-modal-content.modal-content
+      .signup-modal-close
+        i.material-icons shuffle
+      .signup-modal-title
+        | Get Started
+      .signup-modal-description
+        | We store <b>your website code</b>
+        | <br>in <b>your Github account</b>.
+      a.signup-modal-button.btn.btn-large.waves-effect.waves-light.sign-up-btn(href='http://app.closeheat.com/auth/github')
+        | Sign Up With GitHub
+      .signup-modal-quick-terms
+        .signup-modal-quick-terms-title
+          | You reserve all the rights to your code.
+        .signup-modal-quick-term
+          | We care about your security and privacy.
+        a.signup-modal-terms(href='#')
+          | Terms of Service
 
   .testimonials.container-wide
     .row
@@ -108,7 +110,7 @@ block content
     .how-end-title
       | It's alive - Time to Promote your new website
     .how-end-cta
-      a.btn.btn-large.waves-effect.waves-light.sign-up-btn(href='http://app.closeheat.com/auth/github') Get Started
+      a.modal-trigger.btn.btn-large.waves-effect.waves-light.sign-up-btn(href='http://app.closeheat.com/auth/github') Get Started
 
   #features.features
     .container-wide
@@ -187,4 +189,4 @@ block content
       div
         | We help you manage the content.
 
-    a.btn.btn-large.waves-effect.waves-light.sign-up-btn(href='http://app.closeheat.com/auth/github') Get Started
+    a.modal-trigger.btn.btn-large.waves-effect.waves-light.sign-up-btn(href='http://app.closeheat.com/auth/github') Get Started

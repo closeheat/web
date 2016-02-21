@@ -10,6 +10,16 @@ $ ->
   bindSendMessage()
   initReferrer()
   makeBlogLinksTargetBlank()
+  bindModals()
+
+bindModals = ->
+  $(document).on 'click', '.modal-trigger', (e) ->
+    e.preventDefault()
+    $('.modal').openModal(opacity: .8)
+
+  $(document).on 'click', '.signup-modal-close', (e) ->
+    e.preventDefault()
+    $('.modal').closeModal()
 
 personalizeCta = ->
   sign_up_btn = $('.sign-up-btn')

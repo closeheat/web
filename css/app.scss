@@ -20,6 +20,8 @@
 $blue: HSLA(205, 62%, 44%, 1);
 $light-blue: HSLA(205, 85%, 92%, 1);
 $purple: #F62D51;
+$dark-grey: hsla(214, 8%, 46%, 1);
+$dark-grey-transparent: hsla(214, 8%, 46%, .5);
 
 .container-wide {
   padding: 0 2em;
@@ -44,26 +46,15 @@ body {
 }
 
 .signup-modal {
-  .signup-modal-background {
-    position: fixed;
-    background-color: HSLA(0, 0%, 0%, .8);
-    width: 100vw;
-    height: 100vh;
-    top: 0;
-    left: 0;
-  }
+  max-width: 400px;
+  min-height: 500px;
+  background-color: HSLA(0, 0%, 100%, 1);
+  // width: 40vw;
+  // height: 90vh;
+  text-align: center;
+  padding: 0 10px;
 
   .signup-modal-content {
-    position: fixed;
-    top: 5vh;
-    left: 30vw;
-    background-color: HSLA(0, 0%, 100%, 1);
-    width: 40vw;
-    height: 90vh;
-    border-radius: 5px;
-    text-align: center;
-    padding: 0 10px;
-
     // &:hover {
     //   background-color: $secondary-color;
     //   color: $secondary-color;
@@ -80,13 +71,14 @@ body {
 
   .signup-modal-title {
     font-size: 28px;
-    padding-top: 80px;
+    padding-top: 70px;
   }
 
   .signup-modal-description {
     padding-top: 10px;
     font-size: 16px;
     font-weight: 300;
+    color: $dark-grey;
 
     b {
       font-weight: 400;
@@ -94,22 +86,12 @@ body {
   }
 
   .signup-modal-button {
-    display: block;
-    margin: 0 auto;
-    color: white;
-    padding: 16px 20px;
-    margin-top: 70px;
-    text-transform: uppercase;
-    font-weight: 700;
-    letter-spacing: 1.5px;
-    max-width: 250px;
-    border-radius: 100px;
-    background-color: $secondary-color;
+    margin-top: 50px;
   }
 
   .signup-modal-quick-terms {
-    margin-top: 160px;
-    color: HSLA(220, 8%, 57%, 1);
+    margin-top: 60px;
+    color: $dark-grey;
     font-weight: 300;
     padding: 10px;
     font-size: 13px;
@@ -126,6 +108,17 @@ body {
   .signup-modal-quick-terms-title {
     font-weight: 400;
     letter-spacing: .5px;
+  }
+
+  .signup-modal-close {
+    color: $dark-grey-transparent;
+    text-align: right;
+    margin: -15px -23px 0 0;
+    cursor: pointer;
+
+    &:hover {
+      color: $dark-grey;
+    }
   }
 }
 
@@ -398,7 +391,6 @@ $grey: #A1A7AF;
   }
 }
 
-$dark-grey: hsla(214, 8%, 46%, 1);
 .how {
   padding-top: 80px;
   color: $dark-grey;
@@ -537,6 +529,7 @@ $dark-grey: hsla(214, 8%, 46%, 1);
   .feature-description {
     padding-top: 10px;
     text-align: center;
+    color: $dark-grey;
   }
 }
 
@@ -552,4 +545,10 @@ $dark-grey: hsla(214, 8%, 46%, 1);
     padding-bottom: 10px;
     margin: 0 auto;
   }
+}
+
+$darker-blue: HSLA(205, 72%, 7%, 1);
+$darker-purple: hsla(349, 99%, 7%, 1);
+#lean-overlay {
+  background: linear-gradient(50deg, $darker-blue, $darker-purple);
 }

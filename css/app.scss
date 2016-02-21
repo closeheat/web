@@ -450,10 +450,19 @@ $grey: #A1A7AF;
 }
 
 .features {
-  margin-top: 100px;
   padding: 100px 0 120px;
   // background: linear-gradient(50deg, $blue, $purple);
   // background-color: #F9F9FA;
+  //
+  .features-divider {
+    text-align: center;
+    color: $purple;
+    margin-bottom: 60px;
+
+    i {
+      font-size: 27px;
+    }
+  }
 
   .features-title {
     font-size: 40px;

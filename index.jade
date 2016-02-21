@@ -1,19 +1,20 @@
 extends partials/hero-layout
 
 block content
-  .hero.hero-landing.container-wide
+  .hero.hero-landing
     .row.valign-wrapper.no-valign-wrapper-on-mobile
-      .col.s12.m6.description.valign
-        h1 Visual editing layer for your regular website.
-        h2
-          | Stop struggling with Wordpress themes.
-          |  Create a simple HTML website without thinking about content editing.
-          |  Have content editing layer for free <b>without spending a minute</b>.
+      .col.s12.m5.valign
+        .container-wide
+          h1 Visual editing layer for your regular website.
+          h2
+            | Stop struggling with Wordpress themes.
+            |  Create a simple HTML website without thinking about content editing.
+            |  Have content editing layer for free <b>without spending a minute</b>.
 
-        a.btn.btn-large.waves-effect.waves-light.sign-up-btn(href='http://app.closeheat.com/auth/github') Start innovating
-      .col.s12.m6.no-right-padding.valign.hero-img-col
+          a.btn.btn-large.waves-effect.waves-light.sign-up-btn(href='http://app.closeheat.com/auth/github') Start innovating
+      .col.s12.m7.no-right-padding.valign.hero-img-col
         a(href='http://app.closeheat.com/auth/github')
-          img.hero-img.responsive-img(src='https://s3.amazonaws.com/f.cl.ly/items/3B3N0l1U1X1Y0S0J1841/new-hero.png', alt='Sign Up Now')
+          img.hero-img.responsive-img(src='/img/editor.png', alt='Sign Up Now')
   // .signup-modal
   //   .signup-modal-background
   //   .signup-modal-content
@@ -55,7 +56,7 @@ block content
   .how.container-wide
     .how-question
       | How does closeheat work?
-    .how-start-icon
+    .how-icon
       i.material-icons aspect_ratio
 
     .how-step.row
@@ -64,11 +65,11 @@ block content
           .how-step-left-icon
             i.material-icons polymer
           h3.how-step-title
-            | Create your message
+            | Choose a Dope Theme
           .how-step-description
-            | Create beautiful emails in just a few clicks with our easy-to-use editor. You can choose a template and edit it with drag & drop modules, images, call-to-actions, texts, spacers, etc.
+            | Bring your vision to life with the theme that’s right for you. Get your business online, start a blog or open an eCommerce store. It’s easy to get started.
           a.how-step-cta(href='#')
-            | Start with a template
+            | Start with a theme
       .how-step-right.col.offset-l1.l5.no-right-padding.valign
         img.responsive-img(src='img/showcase/editor.gif', alt='Editor')
 
@@ -78,108 +79,63 @@ block content
           .how-step-left-icon
             i.material-icons polymer
           h3.how-step-title
-            | Create your message
+            | Customize with Visual and Code Editors
           .how-step-description
-            | Create beautiful emails in just a few clicks with our easy-to-use editor. You can choose a template and edit it with drag & drop modules, images, call-to-actions, texts, spacers, etc.
+            | Anyone at any skill level can build a fully-functional website with Weebly. Simply drag and drop images and text and publish when you’re ready. Whether you’re a beginner or professional, the interface is fun to use and there is no coding required.
       .how-step-right.col.offset-l1.l5.no-right-padding.valign
         img.responsive-img(src='img/showcase/editor.gif', alt='Editor')
 
-  .features
-    .feature.row.valign-wrapper.no-valign-wrapper-on-mobile
-      .col.s12.m5.description.valign
-        h2 Quick Development Cycle
-        p.flow-text
-          | Make changes in your browser. Don't follow developer workflow when doing marketing.
-          | Do small changes in the browser - publish them in a few seconds.
-      .col.s12.offset-m1.m6.no-right-padding.valign
+    .how-step.row
+      .how-step-left.col.l6.valign-wrapper
+        .how-step-content
+          .how-step-left-icon
+            i.material-icons polymer
+          h3.how-step-title
+            | Publish Instantly
+          .how-step-description
+            | Anyone at any skill level can build a fully-functional website with Weebly. Simply drag and drop images and text and publish when you’re ready. Whether you’re a beginner or professional, the interface is fun to use and there is no coding required.
+      .how-step-right.col.offset-l1.l5.no-right-padding.valign
         img.responsive-img(src='img/showcase/editor.gif', alt='Editor')
 
-    .feature.row.valign-wrapper.no-valign-wrapper-on-mobile
-      .col.m5.s12.description.valign
-        h2 Free Professional Templates
-        p.flow-text
-          | Use astounding templates from <a href='http://templated.co' target='_blank'>TEMPLATED</a>
-          |  and <a href='http://html5up.net' target='_blank'>HTML5 UP</a> for free.
-          | Customize anything and everything.
-      .col.s12.offset-m1.m6.no-right-padding.valign
-        img.responsive-img(src='img/showcase/templates.gif', alt='Templates')
-    .feature.row.valign-wrapper.no-valign-wrapper-on-mobile
-      .col.s12.m5.description.valign
-        h2 Push Changes from GitHub
-        p.flow-text
-          | Use your own text editor, do it localy. As long as you push it to GitHub,
-          |  we'll build and publish it. Command-line tools included.
-      .col.s12.offset-m1.m6.no-right-padding.valign
-        img.responsive-img(src='img/showcase/github.png', alt='GitHub')
-  #pricing.pricetable
-    .container
-      h1.center-align Simple Pricing
-      h3.center-align We're on your side
-      .row.table
-        .col.m4.s12
-          .price
-            .name Basic
-            .total
-              span $
-              em(data-plan-price='pro') 0
-              small /mo
-            .subtotal FREE FOREVER
-          .property 1 website
-          .options
-            ul.list-group
-              li.list-group-item.header For designers & developers
-              li.list-group-item Your own Website
-              li.list-group-item Code Editor in Browser
-              li.list-group-item Custom Domain
-              li.list-group-item Toolkit for Local Editing
-              li.list-group-item Code Versioning via GitHub
-              li.list-group-item Support &amp; Unlimited Hosting
-              li.list-group-item Unlimited Rollbacks
-              li.list-group-item
-                a.pricing-cta-free.btn(href='http://app.closeheat.com/auth/github') Create Free Website
-        .col.m4.s12
-          .price
-            .recommended Recommended
-            .name Professional
-            .total
-              span $
-              em(data-plan-price='pro') 19
-              small /mo
-            .subtotal Free 14 days trial period
-          .property 3 Websites
-          .options
-            ul.list-group
-              li.list-group-item.header For freelancers
-              li.list-group-item Your own Website
-              li.list-group-item Code Editor in Browser
-              li.list-group-item Custom Domain
-              li.list-group-item Toolkit for Local Editing
-              li.list-group-item Code Versioning via GitHub
-              li.list-group-item Support &amp; Unlimited Hosting
-              li.list-group-item Unlimited Rollbacks
-              li.list-group-item SSL
-              li.list-group-item
-                a.pricing-cta-recommended.btn(href='http://app.closeheat.com/auth/github') Create Your Website
-        .col.m4.s12
-          .price
-            .name Team
-            .total
-              span $
-              em(data-plan-price='multi') 99
-              small /mo
-            .subtotal Free 14 days trial period
-          .property Unlimited Websites
-          .options
-            ul.list-group
-              li.list-group-item.header For teams & agencies
-              li.list-group-item Your own Website
-              li.list-group-item Code Editor in Browser
-              li.list-group-item Custom Domain
-              li.list-group-item Toolkit for Local Editing
-              li.list-group-item Code Versioning via GitHub
-              li.list-group-item Support &amp; Unlimited Hosting
-              li.list-group-item Unlimited Rollbacks
-              li.list-group-item SSL
-              li.list-group-item App for Local Editing
-              li.list-group-item
-                a.pricing-cta-team.btn(href='http://app.closeheat.com/auth/github') Create Your Website
+    .how-icon.how-end-icon
+      i.material-icons done
+    .how-end-title
+      | It's alive - Promote your new website
+    .how-end-cta
+      a.btn.btn-large.waves-effect.waves-light.sign-up-btn(href='http://app.closeheat.com/auth/github') Get Started
+
+  .features
+    .container-wide
+      .features-title
+        | Features
+
+      .features-container
+        .row
+          .col.l3
+            .feature-icon
+              i.material-icons input
+            .feature-title
+              | Upload your code
+            .feature-description
+              | Popular apps and services to market your website and grow your business with simple, one-click integrations.
+          .col.l3
+            .feature-icon
+              i.material-icons loop
+            .feature-title
+              | Integration with GitHub
+            .feature-description
+              | Popular apps and services to market your website and grow your business with simple, one-click integrations.
+          .col.l3
+            .feature-icon
+              i.material-icons spellcheck
+            .feature-title
+              | Custom domain support
+            .feature-description
+              | Popular apps and services to market your website and grow your business with simple, one-click integrations.
+          .col.l3
+            .feature-icon
+              i.material-icons view_module
+            .feature-title
+              | Hosting
+            .feature-description
+              | Popular apps and services to market your website and grow your business with simple, one-click integrations.

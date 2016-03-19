@@ -15,7 +15,7 @@ $ ->
 bindModals = ->
   $(document).on 'click', '.modal-trigger', (e) ->
     e.preventDefault()
-    $('.modal').openModal(opacity: .8)
+    $('.subscribe-modal').openModal(opacity: .8)
 
     analytics.track 'Signup modal open', {}
 

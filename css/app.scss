@@ -54,6 +54,12 @@ body {
   text-align: center;
   padding: 0 10px;
 
+  #mc_embed_signup {
+    max-width: 300px;
+    margin: 0 auto;
+    padding: 20px 0;
+  }
+
   .signup-modal-content {
     // &:hover {
     //   background-color: $secondary-color;
@@ -87,6 +93,18 @@ body {
 
   .signup-modal-button {
     margin-top: 50px;
+  }
+
+  #mc-embedded-subscribe {
+    @extend .signup-modal-button;
+    @extend .btn;
+    @extend .btn-large;
+    @extend .sign-up-btn;
+
+    -webkit-appearance: none;
+    background: none;
+    border: none;
+    text-transform: none;
   }
 
   .signup-modal-quick-terms {

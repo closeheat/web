@@ -1,0 +1,150 @@
+extends partials/hero-layout
+
+block content
+  .hero.hero-landing
+    .row.valign-wrapper.no-valign-wrapper-on-mobile
+      .col.l5.valign.hero-text
+        .container-wide
+          h1 Visual editing layer for your regular website.
+          h2
+            | Stop struggling with Wordpress themes.
+            |  Create a simple HTML website without thinking about content editing.
+            |  Have content editing layer for free <b>without spending a minute</b>.
+
+          a.modal-trigger.btn.btn-large.waves-effect.waves-light.sign-up-btn(href='https://app.closeheat.com/users/sign_in') Join closed beta
+      .col.l7.no-right-padding.valign.hero-img-col
+        a(href='https://app.closeheat.com/users/sign_in').modal-trigger
+          img.hero-img.responsive-img(src='/img/editor.png', alt='Sign Up Now')
+
+  .testimonials.container-wide
+    .row
+      .col.l6.testimionals-testimional
+        .col.l3
+          img.testimionals-avatar(src='/img/testimionals/aaron.png')
+        .col.l9
+          .testimionals-content
+            | Awesome app! So glad I wondered across your site today.
+            |  Great user onboarding experience.
+          .testimionals-author
+            | Aaron Myhre, Digital Nomad
+      .col.l6.testimionals-testimional
+        .col.l3
+          img.testimionals-avatar(src='/img/testimionals/tony.png')
+        .col.l9
+          .testimionals-content
+            | We now have a responsive, optimized, and beautiful website built on bootstrap, HTML, and CSS.
+          .testimionals-author
+            | Tony Powell, Young Tech Enthusiast
+
+  .how
+    .how-question
+      | How does closeheat work?
+    .how-icon
+      i.material-icons aspect_ratio
+
+    .how-step.row
+      .how-step-left.col.l6.valign-wrapper
+        .container-wide
+          .how-step-content
+            .how-step-left-icon
+              i.material-icons view_carousel
+            h3.how-step-title
+              | Choose a Dope Theme
+            .how-step-description
+              | It's always easier to start with something.
+              | We make sure that the themes we provide are <b>fresh, rare, responsive and made with
+              | with incredible quality</b>.
+      .how-step-right.col.offset-l1.l5.no-right-padding.valign
+        img.responsive-img(src='img/templates.png', alt='Choose a Dope Theme')
+
+    .how-step.row
+      .how-step-left.col.l6.valign-wrapper
+        .container-wide
+          .how-step-content
+            .how-step-left-icon
+              i.material-icons dashboard
+            h3.how-step-title
+              | Customize with Visual and Code Editors
+            .how-step-description
+              | Different people have different approaches to editing their websites.
+              | Not everybody wants to dig in the code to change a headline or an image.
+              | Not everybody is technical. Embrace that and <b>choose your ways to manage
+              | your website content</b>.
+      .how-step-right.col.offset-l1.l5.no-right-padding.valign
+        img.responsive-img(src='img/visual_feature.png', alt='Customize with Visual and Code Editors')
+
+    .how-step.row
+      .how-step-left.col.l6.valign-wrapper.how-step-left-last
+        .container-wide
+          .how-step-content
+            .how-step-left-icon.how-step-left-icon-pull-left
+              i.material-icons turned_in
+            h3.how-step-title
+              | Publish Instantly
+            .how-step-description
+              | <b>Do quick fixes in the browser</b> - iterate quickly.
+              | Everything is backed up by GitHub source control. Marketing folks will not
+              | even know they are writing code through Visual Editor. Anyone at any skill level
+              | can build a fully-functional website. <b>Anyone can collaborate</b>.
+      .how-step-right.col.offset-l1.l5.no-right-padding.valign
+        img.responsive-img(src='img/skydive.png', alt='Publish Instantly')
+
+    .how-icon.how-end-icon
+      i.material-icons done
+    .how-end-title
+      | Time to Promote your new website
+    .how-end-cta
+      a.modal-trigger.btn.btn-large.waves-effect.waves-light.sign-up-btn(href='https://app.closeheat.com/users/sign_in') Join Closed Beta
+
+  #features.features
+    .container-wide
+      .features-divider
+        i.material-icons clear_all
+      .features-title
+        | Features
+
+      .features-container
+        .row
+          .col.l3
+            .feature-icon
+              i.material-icons dashboard
+            .feature-title
+              | Visual Editing in Browser
+            .feature-description
+              | Create a website without thinking about content editing. Have content editing layer for free without spending a minute.
+
+          .col.l3
+            .feature-icon
+              i.material-icons subtitles
+            .feature-title
+              | Jekyll and Static Websites
+            .feature-description
+              | We support anything that builds with a Dockerfile, but we optimize
+              |  the experience for Jekyll and Static Websites.
+
+          .col.l3
+            .feature-icon
+              i.material-icons loop
+            .feature-title
+              | Upload and sync with GitHub
+            .feature-description
+              | Got a website already? We'll provide the Visual Editing layer then.
+              |  Create feature branches and Pull Requests with Visual Editor.
+
+          .col.l3
+            .feature-icon
+              i.material-icons airplay
+            .feature-title
+              | Code Editing in Browser
+            .feature-description
+              | Need to do some bigger design changes? Edit all your CSS, HTML and JavaScript files
+              | in your browser.
+
+  .container-wide.last-chance
+    .last-chance-title
+      div
+        | You build an incredible website.
+      div
+        | We help you manage the content.
+
+    a.modal-trigger.btn.btn-large.waves-effect.waves-light.sign-up-btn(href='https://app.closeheat.com/users/sign_in') Join Closed Beta

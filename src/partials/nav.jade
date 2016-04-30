@@ -1,0 +1,68 @@
+nav
+  .container-wide
+    .row
+      .col.s12.m3
+        a.logo(href='/')
+          include ../img/logo.svg
+      .col.s12.m9
+        .right
+          ul
+            li
+              a(href='/#features') Features
+            li
+              a(href='/team') Our Team
+            li
+              a.modal-trigger.btn.nav-sign-up(href='https://app.closeheat.com/users/sign_in') Join Closed Beta
+
+.signup-modal.modal
+  .signup-modal-content.modal-content
+    .signup-modal-close
+      i.material-icons shuffle
+    .signup-modal-title
+      | Get Started
+    .signup-modal-description
+      | We store <b>your website code</b>
+      | <br>in <b>your Github account</b>.
+    a.signup-modal-button.btn.btn-large.waves-effect.waves-light.sign-up-btn(href='http://app.closeheat.com/auth/github')
+      | Sign Up With GitHub
+    .signup-modal-quick-terms
+      .signup-modal-quick-terms-title
+        | You reserve all the rights to your code.
+      .signup-modal-quick-term
+        | We care about your security and privacy.
+      a.signup-modal-terms(href='#')
+        | Terms of Service
+
+.subscribe-modal.signup-modal.modal
+  .signup-modal-content.modal-content
+    .signup-modal-close
+      i.material-icons shuffle
+    .signup-modal-title
+      | We're in Invite-only Beta
+    .signup-modal-description
+      | Enter your email below and we'll give you heads up when
+      |  we open for more people.
+    // Begin MailChimp Signup Form
+    #mc_embed_signup
+      form#mc-embedded-subscribe-form.validate(action='//benasbitvinkas.us10.list-manage.com/subscribe/post?u=f84937ea3dcb3a0e8caee05e2&id=b44491527c', method='post', name='mc-embedded-subscribe-form', target='_blank', novalidate='')
+        #mc_embed_signup_scroll
+          .mc-field-group
+            input#mce-EMAIL.required.email(type='email', value='', name='EMAIL' placeholder='Your Best Email')
+          .mc-field-group
+            input#mce-FNAME(type='text', value='', name='FNAME' placeholder='Your Name')
+          #mce-responses.clear
+            #mce-error-response.response(style='display:none')
+            #mce-success-response.response(style='display:none')
+          // real people should not fill this in and expect good things - do not remove this or risk form bot signups
+          div(style='position: absolute; left: -5000px;', aria-hidden='true')
+            input(type='text', name='b_f84937ea3dcb3a0e8caee05e2_b44491527c', tabindex='-1', value='')
+          .clear
+            input#mc-embedded-subscribe(type='submit', value='Get Invited', name='subscribe')
+    // End mc_embed_signup
+    // .signup-modal-quick-terms
+    //   .signup-modal-quick-terms-title
+    //     | You reserve all the rights to your code.
+    //   .signup-modal-quick-term
+    //     | We care about your security and privacy.
+    //   a.signup-modal-terms(href='#')
+    //     | Terms of Service
